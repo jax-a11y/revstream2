@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "version": "8.0",
+    "version": "9.0",
     "created_date": "2025-11-10",
     "description": "Refined entity model for Revenue Stream Hijacking case 2025-137857",
     "case_number": "2025-137857",
     "modeling_approach": "agentic_entity_modeling",
-    "last_updated": "2025-11-18",
-    "changes": "Correction 2025-11-19: Clarified RegimaSA vs RegimA SA; added new findings from financial documents, Sage screenshots, and Bantjes email"
+    "last_updated": "2026-03-19",
+    "changes": "v9.0: Added fincosys cross-references, email addresses, and communication volume metadata from comcosys integration"
   },
   "entities": {
     "persons": [
@@ -52,7 +52,16 @@
           "EVENT_018",
           "EVENT_019",
           "EVENT_020"
-        ]
+        ],
+        "fincosys_code": "PF",
+        "email_addresses": [
+          "pete@regima.zone",
+          "pete@regima.com"
+        ],
+        "communication_volume": {
+          "exchange": 376,
+          "gmail": 40
+        }
       },
       {
         "entity_id": "PERSON_002",
@@ -104,6 +113,12 @@
           "pete_email": "Pete@regima.com",
           "evidence": "Sage screenshot 2025-06-20 shows Rynette with user account Pete@regima.com",
           "significance": "Direct proof of email control"
+        },
+        "email_addresses": [
+          "rynette@regima.zone"
+        ],
+        "communication_volume": {
+          "exchange": 87
         }
       },
       {
@@ -119,7 +134,16 @@
           "shopify_platform_operator",
           "regima_zone_ltd_operator"
         ],
-        "legal_status": "first_respondent_in_case_2025_137857"
+        "legal_status": "first_respondent_in_case_2025_137857",
+        "fincosys_code": "JF",
+        "email_addresses": [
+          "jax@regima.zone",
+          "jax@regima.com"
+        ],
+        "communication_volume": {
+          "exchange": 793,
+          "gmail": 1750
+        }
       },
       {
         "entity_id": "PERSON_005",
@@ -140,7 +164,17 @@
           "platform_investment": "R140,000 - R280,000",
           "investment_duration": "28_months"
         },
-        "legal_status": "second_respondent_in_case_2025_137857"
+        "legal_status": "second_respondent_in_case_2025_137857",
+        "fincosys_code": "DJF",
+        "email_addresses": [
+          "dan@regima.zone",
+          "dan@regima.com",
+          "danx@regima.zone"
+        ],
+        "communication_volume": {
+          "exchange": 757,
+          "gmail": 288
+        }
       },
       {
         "entity_id": "PERSON_006",
@@ -218,7 +252,10 @@
             "Computer expenses in excess of 20% of revenue"
           ],
           "significance": "Acknowledges massive financial deterioration but dismisses detailed audit"
-        }
+        },
+        "email_addresses": [
+          "danie.bantjes@gmail.com"
+        ]
       },
       {
         "entity_id": "PERSON_008",

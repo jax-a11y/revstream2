@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "version": "6.0",
+    "version": "7.0",
     "created_date": "2025-11-10",
     "description": "Relation model for Revenue Stream Hijacking case 2025-137857",
     "case_number": "2025-137857",
     "modeling_approach": "hypergraph_compatible_relations",
-    "last_updated": "2025-11-18",
-    "changes": "Correction 2025-11-19: Clarified RegimaSA vs RegimA SA; added new findings from financial documents, Sage screenshots, and Bantjes email"
+    "last_updated": "2026-03-19",
+    "changes": "v7.0: Added financial_communication_relations from fincosys/comcosys integration — Bantjies-Rynette invoicing, temporal correlations, entity mappings"
   },
   "relations": {
     "ownership_relations": [
@@ -1031,6 +1031,52 @@
           "RegimaSA(Pty)Ltd-2019-Financialstatements-SME.pdf - Preparer, page 1"
         ],
         "significance": "Retrospective preparation 6+ years after period end; timing coincides with legal proceedings"
+      }
+    ],
+    "financial_communication_relations": [
+      {
+        "relation_id": "REL_FINCOM_001",
+        "relation_type": "invoicing_relationship",
+        "source_entity": "PERSON_007",
+        "target_entity": "PERSON_002",
+        "description": "Bantjies invoicing Rynette directly via danie.bantjes@gmail.com to rynette@regima.zone",
+        "evidence": [
+          "comcosys/exchange/rynette@regima.zone/danie/ folder containing Bantjies invoices"
+        ],
+        "source_repo": "comcosys",
+        "significance": "Rynette maintained a dedicated folder for Bantjies correspondence — indicates ongoing financial relationship outside normal channels"
+      },
+      {
+        "relation_id": "REL_FINCOM_002",
+        "relation_type": "financial_communication_correlation",
+        "source_entity": "PERSON_002",
+        "target_entity": "PERSON_007",
+        "temporal_window": "2025-03-01 to 2025-09-22",
+        "description": "Communication between Rynette and Bantjies correlates with financial manipulation events during the fraud period",
+        "evidence": [
+          "fincosys/data/MASTER_ACCOUNTS.json — account activity timelines",
+          "comcosys/exchange/rynette@regima.zone/danie/ — correspondence archive"
+        ],
+        "source_repos": ["fincosys", "comcosys"],
+        "significance": "Temporal alignment between Bantjies-Rynette communications and financial events supports conspiracy finding"
+      },
+      {
+        "relation_id": "REL_FINCOM_003",
+        "relation_type": "fincosys_entity_mapping",
+        "description": "Cross-reference mapping between fincosys financial entities and case entities",
+        "mappings": [
+          {"fincosys_code": "DJF", "case_entity": "PERSON_005", "accounts": 3},
+          {"fincosys_code": "PF", "case_entity": "PERSON_001", "accounts": 1},
+          {"fincosys_code": "JF", "case_entity": "PERSON_004", "accounts": 1},
+          {"fincosys_code": "RST", "case_entity": "ORG_002", "accounts": 3},
+          {"fincosys_code": "RWD", "case_entity": "ORG_001", "accounts": 5},
+          {"fincosys_code": "SLG", "case_entity": "ORG_004", "accounts": 3},
+          {"fincosys_code": "VVA", "case_entity": "ORG_005", "accounts": 2},
+          {"fincosys_code": "FFT", "case_entity": "TRUST_001", "accounts": 0},
+          {"fincosys_code": "KIH", "case_entity": "ORG_015", "accounts": 1}
+        ],
+        "source_repo": "fincosys",
+        "significance": "Links 12 fincosys financial entities to case entities, covering 34 bank accounts with forensic statement data"
       }
     ]
   }
