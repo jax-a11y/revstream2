@@ -825,5 +825,56 @@
       "significance": "Bantjies learned of criminal matters June 10, then ENS Africa suppressed this information August 29",
       "legal_implication": "Professional misconduct and evidence suppression"
     }
-  ]
+  ],
+  "communication_touchpoints": {
+    "metadata": {
+      "source": "comcosys forensic email archive integration",
+      "generated": "2026-03-19",
+      "description": "Communication volumes by fraud phase for key case participants"
+    },
+    "by_phase": [
+      {
+        "phase": "Phase 1 — Foundation",
+        "period": "2025-03-01 to 2025-03-30",
+        "key_mailboxes": {
+          "rynette@regima.zone": "Rynette Farrar — 87 total archived messages across all periods",
+          "pete@regima.zone": "Peter Faucitt — 376 total archived messages",
+          "dan@regima.zone": "Daniel Faucitt — 757 total archived messages",
+          "jax@regima.zone": "Jacqueline Faucitt — 793 total archived messages"
+        },
+        "insight": "Communication archive from Exchange (regima.zone) and Gmail (regima.com) provides forensic sidecar metadata for temporal correlation with financial events"
+      }
+    ],
+    "key_communication_channels": [
+      {
+        "channel": "rynette@regima.zone ↔ danie.bantjes@gmail.com",
+        "folder": "exchange/rynette@regima.zone/danie/",
+        "significance": "Dedicated folder for Bantjies correspondence in Rynette's mailbox — invoicing and coordination channel",
+        "case_relevance": "Supports RYNETTE_BANTJIES_CONSPIRACY relation — direct financial coordination outside normal channels"
+      },
+      {
+        "channel": "rynette@regima.zone/accounts/",
+        "folder": "exchange/rynette@regima.zone/accounts/",
+        "significance": "Rynette's accounts folder — financial record communications",
+        "case_relevance": "Rynette controlled financial communications as self-titled Finance Manager"
+      },
+      {
+        "channel": "rynette@regima.zone/bank/",
+        "folder": "exchange/rynette@regima.zone/bank/",
+        "significance": "Rynette's bank correspondence folder",
+        "case_relevance": "Banking communications controlled by Rynette — relevant to mandate fraud and account manipulation events"
+      },
+      {
+        "channel": "rynette@regima.zone/jacqui/",
+        "folder": "exchange/rynette@regima.zone/jacqui/",
+        "significance": "Rynette's dedicated folder for Jacqui correspondence",
+        "case_relevance": "Communications between co-conspirator and victim"
+      }
+    ],
+    "cross_reference_sources": {
+      "fincosys": "39 FNB bank accounts across 12 case-relevant entities with statement data",
+      "comcosys_exchange": "52+ Exchange Online mailboxes (regima.zone tenant)",
+      "comcosys_gmail": "7 Gmail mailboxes (regima.com domain)"
+    }
+  }
 }

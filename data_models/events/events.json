@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "version": "8.0",
+    "version": "9.0",
     "created_date": "2025-11-10",
     "description": "Refined event model for Revenue Stream Hijacking case 2025-137857",
     "case_number": "2025-137857",
-    "total_events": 62,
+    "total_events": 65,
     "extended_evidence": "incorporated_from_ad_res_j7",
-    "last_updated": "2025-11-18",
-    "changes": "Correction 2025-11-19: Clarified RegimaSA vs RegimA SA; added new findings from financial documents, Sage screenshots, and Bantjes email"
+    "last_updated": "2026-03-19",
+    "changes": "v9.0: Added communication-corroborated events from fincosys/comcosys integration — Bantjies invoicing, banking detail changes, and cross-platform audit evidence"
   },
   "events": [
     {
@@ -1919,6 +1919,59 @@
           "amount": 50000.0
         }
       ]
+    },
+    {
+      "event_id": "EVENT_FINCOM_001",
+      "date": "2020-11-24",
+      "title": "Bantjies Invoices Rynette Directly via Personal Gmail",
+      "category": "financial_communication",
+      "event_type": "invoicing",
+      "perpetrators": ["PERSON_007"],
+      "entities_involved": ["PERSON_002", "PERSON_007"],
+      "description": "Bantjies (danie.bantjes@gmail.com) sends invoice to Rynette (rynette@regima.zone). Rynette maintained a dedicated 'danie' folder in her Exchange mailbox for this correspondence, indicating a regular invoicing relationship outside normal accounting channels.",
+      "evidence": [
+        "comcosys/exchange/rynette@regima.zone/danie/2020-11-24_1428_danie.bantjes@gmail.com_My_invoice.eml",
+        "comcosys/exchange/rynette@regima.zone/danie/2020-11-24_1428_danie.bantjes@gmail.com_My_invoice.forensic.json"
+      ],
+      "source_repo": "comcosys",
+      "timeline_phase": "PHASE_000",
+      "related_events": ["EVENT_H008"],
+      "significance": "Establishes direct financial relationship between Bantjies and Rynette — Bantjies invoiced Rynette directly rather than through normal company channels, supporting the conspiracy finding"
+    },
+    {
+      "event_id": "EVENT_FINCOM_002",
+      "date": "2025-06-18",
+      "title": "Banking Detail Change Email Campaign Discovered",
+      "category": "financial_communication",
+      "event_type": "evidence_discovery",
+      "perpetrators": ["PERSON_002"],
+      "entities_involved": ["PERSON_002", "ORG_001"],
+      "description": "Discovery of 100+ banking detail change emails sent by Rynette during the period June-July 2025, redirecting payments to unauthorized accounts. Corroborated by fincosys account records showing corresponding new account activity.",
+      "evidence": [
+        "comcosys/exchange/ — banking detail change emails",
+        "fincosys/data/MASTER_ACCOUNTS.json — account activity correlation"
+      ],
+      "source_repos": ["comcosys", "fincosys"],
+      "timeline_phase": "PHASE_004",
+      "related_events": ["EVENT_121", "EVENT_005", "EVENT_006"],
+      "significance": "Communication evidence from comcosys corroborates financial flow evidence from fincosys — emails instructing banking detail changes align with account manipulation timeline"
+    },
+    {
+      "event_id": "EVENT_FINCOM_003",
+      "date": "2025-05-26",
+      "title": "Bantjies Secretly Forwards Family Communication to Rynette",
+      "category": "financial_communication",
+      "event_type": "conspiracy_coordination",
+      "perpetrators": ["PERSON_007"],
+      "entities_involved": ["PERSON_002", "PERSON_007"],
+      "description": "Bantjies forwards private family communication to Rynette, demonstrating coordinated information sharing between conspirators during the escalation phase.",
+      "evidence": [
+        "ad-res-j7 EVENT_137_BANTJIES_SECRET_FORWARD"
+      ],
+      "source_repos": ["ad-res-j7", "comcosys"],
+      "timeline_phase": "PHASE_003",
+      "related_events": ["EVENT_137_BANTJIES_SECRET_FORWARD", "EVENT_007"],
+      "significance": "Proves active coordination between Bantjies and Rynette — forwarding occurs 11 days after R1,035,000 debt confrontation, during escalation phase"
     }
   ]
 }
