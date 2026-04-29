@@ -1,0 +1,26 @@
+Entity ID,Name,Type,Agent Type,Role,Degree,Weighted Degree,Involvement Events,Financial Impact,Degree Centrality,Betweenness Centrality,Closeness Centrality
+DOMAIN_001,DOMAIN_001,domain,legitimate_asset,isolated,1,1.0,0,unknown,0.0417,0.0000,0.4276
+DOMAIN_002,DOMAIN_002,domain,instrument_of_fraud,tool,2,1.5,0,unknown,0.0833,0.0616,0.6143
+ORG_001,Regima Worldwide Distribution (PTY) LTD,organization,instrument_of_fraud,tool,5,4.6,0,unknown,0.2083,0.0036,0.6228
+ORG_002,Regima Skin Treatments CC,organization,affected_entity,isolated,0,0,0,unknown,0.0000,0.0000,0.0000
+ORG_003,RegimA Zone Ltd,organization,legitimate_business,operative,6,5.199999999999999,0,unknown,0.2500,0.0634,0.7171
+ORG_004,Strategic Logistics Group,organization,victim_entity,operative,4,3.6,0,unknown,0.1667,0.0000,0.6383
+ORG_005,Villa Via,organization,instrument_of_wealth_transfer,isolated,0,0,0,unknown,0.0000,0.0000,0.0000
+ORG_006,RegimA SA,organization,victim_entity,isolated,0,0,0,unknown,0.0000,0.0000,0.0000
+ORG_008,ReZonance (Pty) Ltd,organization,victim,victim,3,2.5,8,unknown,0.1250,0.0000,0.5625
+ORG_009,Adderory (Pty) Ltd,organization,accomplice,isolated,0,0,5,"R5,400,000+",0.0000,0.0000,0.0000
+ORG_010,Adderory Skin (Pty) Ltd,organization,accomplice,isolated,0,0,3,unknown_amount,0.0000,0.0000,0.0000
+PERSON_001,Peter Andrew Faucitt,person,antagonist,hub,10,9.2,11,"R10,269,727.90",0.4167,0.0254,0.7692
+PERSON_002,Rynette Farrar,person,antagonist,facilitator,11,9.4,8,"R4,276,832.85",0.4583,0.2609,0.9524
+PERSON_003,Adderory (Rynette's Son),person,accomplice,bridge,5,2.5,5,"R5,400,000+",0.2083,0.1449,0.8257
+PERSON_004,Jacqueline Faucitt,person,victim,victim,5,3.0,0,unknown,0.2083,0.1087,0.8654
+PERSON_005,Daniel James Faucitt,person,victim,victim,7,5.699999999999999,0,unknown,0.2917,0.0489,0.7860
+PERSON_006,Linda,person,neutral,isolated,1,1.0,0,unknown,0.0417,0.0000,0.5014
+PERSON_007,Danie Bantjies,person,antagonist,operative,7,6.1,3,unknown,0.2917,0.0761,0.6897
+PERSON_008,Kayla,person,victim,victim,4,2.8,2,unknown,0.1667,0.0616,0.5714
+PERSON_009,Gee,person,neutral,isolated,1,1.0,2,unknown,0.0417,0.0000,0.3888
+PERSON_010,Bernadine Wright,person,neutral,isolated,1,1.0,1,unknown,0.0417,0.0000,0.4176
+PERSON_011,Chantal,person,neutral,isolated,1,0.3,2,unknown,0.0417,0.0000,0.4918
+PERSON_012,Jax,person,neutral,isolated,0,0,2,unknown,0.0000,0.0000,0.0000
+PLATFORM_001,Shopify Platform,platform,central_infrastructure,operative,4,4.0,0,unknown,0.1667,0.0000,0.5643
+TRUST_001,Faucitt Family Trust,trust,victim_entity,operative,6,4.6,0,unknown,0.2500,0.0036,0.7143

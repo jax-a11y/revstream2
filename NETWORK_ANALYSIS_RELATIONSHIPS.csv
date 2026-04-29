@@ -1,0 +1,43 @@
+Source ID,Source Name,Target ID,Target Name,Weight,Relation Type,Strength,Legal Status,Evidence Count
+PERSON_001,Peter Andrew Faucitt,ORG_001,Regima Worldwide Distribution (PTY) LTD,1.000,controls,unknown,disputed,2
+PERSON_001,Peter Andrew Faucitt,TRUST_001,Faucitt Family Trust,1.000,trustee_of,unknown,violated,2
+PERSON_001,Peter Andrew Faucitt,PERSON_002,Rynette Farrar,1.000,co_conspirator,unknown,unknown,3
+PERSON_001,Peter Andrew Faucitt,PERSON_007,Danie Bantjies,1.000,co_conspirator,unknown,unknown,3
+PERSON_001,Peter Andrew Faucitt,PERSON_005,Daniel James Faucitt,1.000,perpetrator_victim,unknown,unknown,2
+PERSON_001,Peter Andrew Faucitt,ORG_004,Strategic Logistics Group,1.000,perpetrator_victim,event_based,fraud_related,1
+PERSON_001,Peter Andrew Faucitt,ORG_008,ReZonance (Pty) Ltd,1.000,perpetrator_victim,event_based,fraud_related,1
+PERSON_001,Peter Andrew Faucitt,PERSON_008,Kayla,1.000,perpetrator_victim,event_based,fraud_related,1
+PERSON_001,Peter Andrew Faucitt,ORG_003,RegimA Zone Ltd,0.600,perpetrator_victim,event_based,fraud_related,1
+PERSON_001,Peter Andrew Faucitt,PERSON_004,Jacqueline Faucitt,0.600,perpetrator_victim,event_based,fraud_related,1
+PERSON_002,Rynette Farrar,PERSON_003,Adderory (Rynette's Son),0.500,family_conspiracy,unknown,unknown,1
+PERSON_002,Rynette Farrar,PERSON_005,Daniel James Faucitt,1.000,perpetrator_victim,unknown,unknown,2
+PERSON_002,Rynette Farrar,ORG_001,Regima Worldwide Distribution (PTY) LTD,1.000,perpetrator_victim,event_based,fraud_related,1
+PERSON_002,Rynette Farrar,ORG_004,Strategic Logistics Group,1.000,perpetrator_victim,event_based,fraud_related,1
+PERSON_002,Rynette Farrar,ORG_008,ReZonance (Pty) Ltd,1.000,perpetrator_victim,event_based,fraud_related,1
+PERSON_002,Rynette Farrar,PERSON_008,Kayla,1.000,perpetrator_victim,event_based,fraud_related,1
+PERSON_002,Rynette Farrar,TRUST_001,Faucitt Family Trust,1.000,perpetrator_victim,event_based,fraud_related,1
+PERSON_002,Rynette Farrar,ORG_003,RegimA Zone Ltd,0.600,perpetrator_victim,event_based,fraud_related,1
+PERSON_002,Rynette Farrar,PERSON_004,Jacqueline Faucitt,0.300,perpetrator_victim,event_based,fraud_related,1
+PERSON_002,Rynette Farrar,PERSON_006,Linda,1.000,sibling_of,unknown,unknown,2
+PERSON_004,Jacqueline Faucitt,PLATFORM_001,Shopify Platform,1.000,operates,unknown,legitimate,2
+PERSON_004,Jacqueline Faucitt,PERSON_007,Danie Bantjies,0.600,perpetrator_victim,event_based,fraud_related,1
+PERSON_004,Jacqueline Faucitt,TRUST_001,Faucitt Family Trust,0.500,beneficiary_of,unknown,legitimate,1
+PERSON_005,Daniel James Faucitt,ORG_003,RegimA Zone Ltd,1.000,owns,complete_ownership,legitimate,2
+PERSON_005,Daniel James Faucitt,PLATFORM_001,Shopify Platform,1.000,operates,unknown,legitimate,2
+PERSON_005,Daniel James Faucitt,PERSON_003,Adderory (Rynette's Son),0.300,perpetrator_victim,event_based,fraud_related,1
+PERSON_005,Daniel James Faucitt,PERSON_007,Danie Bantjies,0.900,perpetrator_victim,event_based,fraud_related,1
+PERSON_005,Daniel James Faucitt,TRUST_001,Faucitt Family Trust,0.500,beneficiary_of,unknown,legitimate,1
+PERSON_007,Danie Bantjies,TRUST_001,Faucitt Family Trust,1.000,trustee_of,unknown,undisclosed_conflict,2
+PERSON_007,Danie Bantjies,ORG_001,Regima Worldwide Distribution (PTY) LTD,0.600,perpetrator_victim,event_based,fraud_related,1
+PERSON_007,Danie Bantjies,ORG_004,Strategic Logistics Group,1.000,perpetrator_victim,event_based,fraud_related,1
+PERSON_007,Danie Bantjies,PERSON_010,Bernadine Wright,1.000,witness_to_financial_control,unknown,material_witness,2
+PERSON_008,Kayla,PERSON_011,Chantal,0.300,perpetrator_victim,event_based,fraud_related,1
+PERSON_008,Kayla,ORG_008,ReZonance (Pty) Ltd,0.500,estate_ownership,unknown,estate_asset,1
+PERSON_009,Gee,DOMAIN_002,DOMAIN_002,1.000,witness_to_fraud,unknown,material_witness,2
+PERSON_003,Adderory (Rynette's Son),DOMAIN_002,DOMAIN_002,0.500,owns,complete_ownership,fraudulent,1
+PERSON_003,Adderory (Rynette's Son),ORG_004,Strategic Logistics Group,0.600,perpetrator_victim,event_based,fraud_related,1
+PERSON_003,Adderory (Rynette's Son),TRUST_001,Faucitt Family Trust,0.600,perpetrator_victim,event_based,fraud_related,1
+ORG_001,Regima Worldwide Distribution (PTY) LTD,ORG_003,RegimA Zone Ltd,1.000,depends_on,unknown,unknown,3
+ORG_001,Regima Worldwide Distribution (PTY) LTD,PLATFORM_001,Shopify Platform,1.000,uses_without_ownership,unknown,fraudulent,3
+ORG_003,RegimA Zone Ltd,PLATFORM_001,Shopify Platform,1.000,owns,complete_ownership,legitimate,2
+ORG_003,RegimA Zone Ltd,DOMAIN_001,DOMAIN_001,1.000,owns,complete_ownership,legitimate,2
