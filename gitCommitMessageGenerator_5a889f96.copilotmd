@@ -1,0 +1,321 @@
+> 🚨 Note: This log may contain personal information such as the contents of your files or terminal output. Please review the contents carefully before sharing.
+# gitCommitMessageGenerator - 5a889f96
+
+- [Request Messages](#request-messages)
+  - [System](#system)
+  - [User](#user)
+- [Response](#response)
+
+## Metadata
+<pre><code>
+requestType      : ChatCompletions
+model            : gpt-4o-mini-2024-07-18
+maxPromptTokens  : 12285
+maxResponseTokens: 4096
+location         : 6
+otherOptions     : {"temperature":0.1,"stream":true}
+intent           : undefined
+startTime        : 2026-05-22T02:31:46.810Z
+endTime          : 2026-05-22T02:31:48.427Z
+duration         : 1617ms
+ourRequestId     : ee752ee8-8960-494c-8cc7-618c2bf450bf
+requestId        : ee752ee8-8960-494c-8cc7-618c2bf450bf
+serverRequestId  : ee752ee8-8960-494c-8cc7-618c2bf450bf
+timeToFirstToken : 1463ms
+resolved model   : gpt-4o-mini-2024-07-18
+usage            : {"completion_tokens":19,"completion_tokens_details":{"accepted_prediction_tokens":0,"rejected_prediction_tokens":0},"prompt_tokens":3101,"prompt_tokens_details":{"cached_tokens":0},"total_tokens":3120,"reasoning_tokens":0}
+</code></pre>
+## Request Messages
+### System
+~~~md
+You are an AI programming assistant, helping a software developer to come with the best git commit message for their code changes.
+You excel in interpreting the purpose behind code changes to craft succinct, clear commit messages that adhere to the repository's guidelines.
+
+# First, think step-by-step:
+1. Analyze the CODE CHANGES thoroughly to understand what's been modified.
+2. Use the ORIGINAL CODE to understand the context of the CODE CHANGES. Use the line numbers to map the CODE CHANGES to the ORIGINAL CODE.
+3. Identify the purpose of the changes to answer the *why* for the commit messages, also considering the optionally provided RECENT USER COMMITS.
+4. Review the provided RECENT REPOSITORY COMMITS to identify established commit message conventions. Focus on the format and style, ignoring commit-specific details like refs, tags, and authors.
+5. Generate a thoughtful and succinct commit message for the given CODE CHANGES. It MUST follow the the established writing conventions. 6. Remove any meta information like issue references, tags, or author names from the commit message. The developer will add them.
+7. Now only show your message, wrapped with a single markdown ```text codeblock! Do not provide any explanations or details
+Follow Microsoft content policies.
+Avoid content that violates copyrights.
+If you are asked to generate content that is harmful, hateful, racist, sexist, lewd, or violent, only respond with "Sorry, I can't assist with that."
+Keep your answers short and impersonal.
+
+~~~
+
+### User
+~~~md
+<repository-context>
+# REPOSITORY DETAILS:
+Repository name: revstream2
+Branch name: main
+
+</repository-context>
+<user-commits>
+# RECENT USER COMMITS (For reference only, do not copy!):
+- Refactor code structure for improved readability and maintainability
+- feat: Add Super-Sleuth agent for network investigation in Revenue Stream case
+- feat: Add customization resolution results log for agent performance tracking
+- feat: Add comprehensive network analysis and report generation for revenue stream hijacking case 2025-137857
+- Refactor mediation notes email correspondence for clarity and formatting
+
+</user-commits>
+<recent-commits>
+# RECENT REPOSITORY COMMITS (For reference only, do not copy!):
+- Refactor code structure for improved readability and maintainability
+- feat: Add Super-Sleuth agent for network investigation in Revenue Stream case
+- feat: Add customization resolution results log for agent performance tracking
+- feat: Add comprehensive network analysis and report generation for revenue stream hijacking case 2025-137857
+- Refactor mediation notes email correspondence for clarity and formatting
+
+</recent-commits>
+<changes>
+<original-code>
+# ORIGINAL CODE:
+<attachment id="forensic-network-investigation.prompt.md" isSummarized="true">
+// filepath: d:\Documents\GitHub\revstream2\.github\prompts\forensic-network-investigation.prompt.md
+1: ---
+ 2: description: "Investigate the Revenue Stream Hijacking conspiracy network (2025-137857) by analyzing entity relationships, fund flows, network positions, and evidence patterns"
+ 3: name: "Forensic Network Investigation"
+ 4: argument-hint: "What aspect of the conspiracy network should I investigate? (e.g., 'Map Rynette Farrar network', 'Trace R10.269M fund flow', 'Who is the apex perpetrator', 'Show conspiracy hierarchy', 'When did fraud escalate', 'Find weak links')"
+ 5: agent: "ask"
+ 6: ---
+ 7: 
+ 8: # Forensic Network Investigation: Revenue Stream Hijacking Case (2025-137857)
+ 9: 
+10: You are investigating a sophisticated financial fraud conspiracy with multiple perpetrators, victims, and intermediaries. Your task is to analyze the network structure, relationships, fund flows, and evidence to expose the conspiracy.
+11: 
+12: ## Available Data Models
+13: 
+14: Access these case files in `data_models/`:
+15: - **entities_refined_2025_11_18.json** — 25 persons, organizations, platforms, trusts, domains with roles and involvement
+16: - **relations_refined_2025_11_18.json** — 54 relationships (control, ownership, conspiracy, financial, victim-perpetrator)
+17: - **events_refined_2025_11_18.json** — 62 events with perpetrators, victims, evidence, financial impact
+18: - **timelines_refined_2025_11_18.json** — Events organized by phase (Foundation → Cover-up)
+19: 
+20: ## Analysis Tools
+21: 
+22: Use the existing analysis infrastructure:
+23: - `network_analysis.py` — Calculate network metrics (centrality, communities, hierarchy, roles)
+24: - `network_report_generator.py` — Generate reports (JSON, markdown, CSV, visualization)
+25: - Existing reports: `NETWORK_ANALYSIS_REPORT.json`, `NETWORK_ANALYSIS_SUMMARY.md`
+26: 
+27: ## Common Investigation Patterns
+28: 
+29: ### 1. Map the Network for a Specific Entity
+30: **Example**: "Map the Rynette Farrar network"
+31: 
+32: Show all connections for an entity:
+33: - List all entities connected to them (incoming and outgoing relationships)
+161:
+</attachment>
+
+</original-code>
+<code-changes>
+# CODE CHANGES:
+```diff
+diff --git a/.github\prompts\forensic-network-investigation.prompt.md b/.github\prompts\forensic-network-investigation.prompt.md
+new file mode 100644
+--- /dev/null
++++ b/.github\prompts\forensic-network-investigation.prompt.md
+@@ -0,0 +1,160 @@
++---
++description: "Investigate the Revenue Stream Hijacking conspiracy network (2025-137857) by analyzing entity relationships, fund flows, network positions, and evidence patterns"
++name: "Forensic Network Investigation"
++argument-hint: "What aspect of the conspiracy network should I investigate? (e.g., 'Map Rynette Farrar network', 'Trace R10.269M fund flow', 'Who is the apex perpetrator', 'Show conspiracy hierarchy', 'When did fraud escalate', 'Find weak links')"
++agent: "ask"
++---
++
++# Forensic Network Investigation: Revenue Stream Hijacking Case (2025-137857)
++
++You are investigating a sophisticated financial fraud conspiracy with multiple perpetrators, victims, and intermediaries. Your task is to analyze the network structure, relationships, fund flows, and evidence to expose the conspiracy.
++
++## Available Data Models
++
++Access these case files in `data_models/`:
++- **entities_refined_2025_11_18.json** — 25 persons, organizations, platforms, trusts, domains with roles and involvement
++- **relations_refined_2025_11_18.json** — 54 relationships (control, ownership, conspiracy, financial, victim-perpetrator)
++- **events_refined_2025_11_18.json** — 62 events with perpetrators, victims, evidence, financial impact
++- **timelines_refined_2025_11_18.json** — Events organized by phase (Foundation → Cover-up)
++
++## Analysis Tools
++
++Use the existing analysis infrastructure:
++- `network_analysis.py` — Calculate network metrics (centrality, communities, hierarchy, roles)
++- `network_report_generator.py` — Generate reports (JSON, markdown, CSV, visualization)
++- Existing reports: `NETWORK_ANALYSIS_REPORT.json`, `NETWORK_ANALYSIS_SUMMARY.md`
++
++## Common Investigation Patterns
++
++### 1. Map the Network for a Specific Entity
++**Example**: "Map the Rynette Farrar network"
++
++Show all connections for an entity:
++- List all entities connected to them (incoming and outgoing relationships)
++- Explain relationship types (control, ownership, conspiracy, financial)
++- Identify their network role (decision-maker, facilitator, operative, victim)
++- Find all events where they appear as perpetrator or victim
++- Calculate their centrality metrics (degree, betweenness, closeness)
++- Show which communities/hierarchy level they belong to
++
++**Output**: Relationship map with entity cards, network position summary, involvement events
++
++---
++
++### 2. Trace Fund Flow from Source to Recipients
++**Example**: "Trace the R10.269M fund flow from source to recipients"
++
++Map the complete financial chain:
++- Identify source entities (trust assets, platform revenue, investment accounts)
++- Follow transfer chain (source → intermediary → recipient) with amounts at each step
++- Document authorization (who approved, who executed, missing co-signatures)
++- Identify perpetrators vs. innocent intermediaries
++- Highlight false authorizations and fraudulent redirections
++- Calculate total stolen, total recovered, total distributed to perpetrators
++
++**Output**: Fund flow diagram, transfer chain breakdown, authorization gaps, final recipient analysis
++
++---
++
++### 3. Identify Apex Perpetrator via Network Position
++**Example**: "Who is the apex perpetrator based on network position?"
++
++Analyze network centrality and control:
++- Calculate degree centrality (how many direct connections)
++- Calculate betweenness centrality (gatekeeping role in network)
++- Calculate closeness centrality (distance to other actors)
++- Identify bottleneck entities (high betweenness = critical coordinators)
++- Show which relationships they control directly vs. through intermediaries
++- Document what events they approve, execute, or authorize
++- Compare to other perpetrators to identify hierarchy
++
++**Output**: Centrality ranking table, gatekeeping analysis, control comparison, hierarchy positioning
++
++---
++
++### 4. Analyze Conspiracy Hierarchy and Family Involvement
++**Example**: "Show the conspiracy hierarchy and family involvement"
++
++Map organizational structure and family groups:
++- Identify decision-maker level (who sets strategy, who benefits most)
++- Identify facilitator level (who enables execution, who has access)
++- Identify operative level (who executes transactions, who takes risks)
++- Identify family relationships (who are relatives, who share households)
++- Show which family members participated, what roles, how they benefited
++- Document shared events, joint accounts, coordinated timing
++- Calculate aggregate financial benefit to family vs. individuals
++
++**Output**: Hierarchy diagram (decision makers → facilitators → operatives), family tree with roles, benefit distribution
++
++---
++
++### 5. Analyze When and Why Fraud Escalated
++**Example**: "When and why did the fraud escalate?"
++
++Examine timeline of escalation:
++- Identify trigger events (when did threats emerge, when did victims start investigating)
++- Show baseline period (normal transactions before crisis)
++- Identify acceleration point (when did fraud volume or intensity increase)
++- Show rapid response coordination (how fast did perpetrators react)
++- Document timing correlations (events by same perpetrators, close together)
++- Analyze consciousness of guilt (cover-up speed, evidence destruction, coordination)
++
++**Output**: Timeline with annotations, trigger analysis, escalation graph, response time comparisons
++
++---
++
++### 6. Find Weak Links in the Conspiracy Network
++**Example**: "What are the weak links in the conspiracy network?"
++
++Identify critical vulnerabilities:
++- Calculate node criticality (what happens if each node is removed)
++- Identify single points of failure (whose removal collapses the network)
++- Find isolated perpetrators (few connections, no backup coordinators)
++- Identify conflicted intermediaries (forced to serve multiple masters)
++- Locate information hubs (entities who know about many events)
++- Find evidence dependencies (events that can't happen without specific authorization)
++
++**Output**: Network vulnerability analysis, critical node rankings, cascade failure predictions, interrogation priorities
++
++---
++
++## Evidence Integration
++
++For any finding, support it with:
++- **Entities involved** — Who appears in this connection
++- **Events** — What transactions, communications, or meetings occurred
++- **Financial amounts** — How much money, in what direction, by what authorization
++- **Relationship evidence** — Document count, frequency, legal status
++- **Timeline correlation** — When did events occur relative to each other
++- **Authorization chain** — Who approved, who executed, who benefited
++
++## Constraints
++
++- ✓ Work only with documented case data (entities, relationships, events from JSON files)
++- ✓ Present evidence and patterns (don't make legal judgments)
++- ✓ Flag assumptions clearly (differences between fact and inference)
++- ✓ Use existing analysis tools (network_analysis.py, reports)
++- ✗ Do not generate fake evidence or unsupported relationships
++- ✗ Do not modify case data files
++- ✗ Do not speculate beyond what data supports
++- ✗ Do not investigate cases outside Revenue Stream Hijacking (2025-137857)
++
++## Output Structure
++
++**For any investigation, provide:**
++
++1. **Question/Goal** — What are we investigating?
++2. **Data Accessed** — Which files/entities/relationships examined?
++3. **Key Findings** — What did you discover? (specific numbers, names, connections)
++4. **Evidence** — What supports this? (entities, events, amounts, relationships)
++5. **Conspiracy Implications** — What does this reveal about organization/coordination/intent?
++6. **Connections** — How does this fit with other known patterns?
++7. **Next Angle** — What should be investigated next?
++
++## Case Summary
++
++**Primary Perpetrators**: Peter Faucitt, Rynette Farrar, Danie Bantjies (suspected apex), family members
++**Victims**: Daniel Faucitt, Jacqui Faucitt, Kayla Estate, ReZonance (Pty) Ltd
++**Total Theft**: R10.269M+ over 158 days (March-August 2025)
++**Method**: Trust violations, payment redirection, stock manipulation, transfer pricing fraud, account hijacking
++**Evidence**: Bank statements, invoices, domain registrations, trial balances, SARS audit trails
+```
+</code-changes>
+
+</changes>
+<reminder>
+Now generate a commit messages that describe the CODE CHANGES.
+DO NOT COPY commits from RECENT COMMITS, but use it as reference for the commit style.
+ONLY return a single markdown code block, NO OTHER PROSE!
+```text
+commit message goes here
+```
+</reminder>
+<custom-instructions>
+
+</custom-instructions>
+
+~~~
+
+
+
+## Response
+### Assistant
+~~~md
+```text
+feat: Add forensic network investigation prompt for Revenue Stream Hijacking case
+```
+~~~
+
+
+<style>
+[id^="system"], [id^="user"], [id^="assistant"] {
+		margin: 4px 0 4px 0;
+}
+
+.markdown-body > pre {
+		padding: 4px 16px;
+}
+</style>

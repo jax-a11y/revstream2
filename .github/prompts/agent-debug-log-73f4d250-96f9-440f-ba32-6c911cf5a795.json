@@ -1,0 +1,1133 @@
+{
+  "resourceSpans": [
+    {
+      "resource": {
+        "attributes": [
+          {
+            "key": "service.name",
+            "value": {
+              "stringValue": "copilot-chat"
+            }
+          },
+          {
+            "key": "session.id",
+            "value": {
+              "stringValue": "73f4d250-96f9-440f-ba32-6c911cf5a795"
+            }
+          }
+        ]
+      },
+      "scopeSpans": [
+        {
+          "scope": {
+            "name": "copilot-chat"
+          },
+          "spans": [
+            {
+              "traceId": "exported-trace",
+              "spanId": "session-start-73f4d250-96f9-440f-ba32-6c911cf5a795",
+              "name": "session_start",
+              "kind": 1,
+              "startTimeUnixNano": "1777523345843000000",
+              "endTimeUnixNano": "1777523345843000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "580f7d87-36fc-4fdb-85e8-ae86418ab991",
+              "name": "Agent Discovery",
+              "kind": 1,
+              "startTimeUnixNano": "1777521945232000000",
+              "endTimeUnixNano": "1777521945232000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 24 agents in 1812.1ms | loaded: [pages, Super-Sleuth, Untitled-1, Plan, Ask, Explore, ai-team-dev, ai-team-producer, ai-team-qa, Meta Agentic Project Scaffold, Context Architect, Doublecheck, Ember, Polyglot Test Builder, Polyglot Test Fixer, Polyglot Test Generator, Polyglot Test Implementer, Polyglot Test Linter, Polyglot Test Planner, Polyglot Test Researcher, Polyglot Test Tester, QA, RUG, SWE] | folders: [/c:/Users/Jax/.copilot/agents, /c:/Users/Jax/.claude/agents, /C:/Users/Jax/AppData/Roaming/Code/User/prompts, /d:/Documents/GitHub/revstream2/.github/agents, /d:/Documents/GitHub/revstream2/.claude/agents]"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "discovery"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "0546f5e3-c532-4169-9794-c0671f70f2a3",
+              "name": "Instructions Discovery",
+              "kind": 1,
+              "startTimeUnixNano": "1777521945232000000",
+              "endTimeUnixNano": "1777521945232000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 0 instructions in 641.6ms | folders: [/c:/Users/Jax/.copilot/instructions, /c:/Users/Jax/.claude/rules, /C:/Users/Jax/AppData/Roaming/Code/User/prompts, /d:/Documents/GitHub/revstream2/.github/instructions, /d:/Documents/GitHub/revstream2/.claude/rules]"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "discovery"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "b18e7b1a-b40c-48f6-8386-633118fafd3c",
+              "name": "Slash Commands Discovery",
+              "kind": 1,
+              "startTimeUnixNano": "1777521945233000000",
+              "endTimeUnixNano": "1777521945233000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 24 slash commands in 27.2ms | loaded: [plan, get-search-view-results, troubleshoot, agent-customization, init, create-prompt, create-instructions, create-skill, create-agent, create-hook, ai-team-orchestration, awesome-copilot:suggest-awesome-github-copilot-agents, awesome-copilot:suggest-awesome-github-copilot-instructions, awesome-copilot:suggest-awesome-github-copilot-skills, context-engineering:context-map, context-engineering:refactor-plan, context-engineering:what-context-needed, doublecheck, ember:from-the-other-side-vega, polyglot-test-agent, power-platform-architect, structured-autonomy:structured-autonomy-generate, structured-autonomy:structured-autonomy-implement, structured-autonomy:structured-autonomy-plan] | folders: [/C:/Users/Jax/AppData/Roaming/Code/User/prompts, /d:/Documents/GitHub/revstream2/.github/prompts, /c:/Users/Jax/.agents/skills, /c:/Users/Jax/.copilot/skills, /c:/Users/Jax/.claude/skills, /d:/Documents/GitHub/revstream2/.agents/skills, /d:/Documents/GitHub/revstream2/.github/skills, /d:/Documents/GitHub/revstream2/.claude/skills]"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "discovery"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "ebef1d89-196c-4bb8-b1db-5549483d2e70",
+              "name": "Skill Discovery",
+              "kind": 1,
+              "startTimeUnixNano": "1777521945233000000",
+              "endTimeUnixNano": "1777521945233000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 23 skills in 59.0ms | loaded: [ai-team-orchestration, suggest-awesome-github-copilot-agents, suggest-awesome-github-copilot-instructions, suggest-awesome-github-copilot-skills, context-map, refactor-plan, what-context-needed, doublecheck, from-the-other-side-vega, polyglot-test-agent, power-platform-architect, structured-autonomy-generate, structured-autonomy-implement, structured-autonomy-plan, get-search-view-results, troubleshoot, agent-customization, init, create-prompt, create-instructions, create-skill, create-agent, create-hook] | folders: [/c:/Users/Jax/.agents/skills, /c:/Users/Jax/.copilot/skills, /c:/Users/Jax/.claude/skills, /d:/Documents/GitHub/revstream2/.agents/skills, /d:/Documents/GitHub/revstream2/.github/skills, /d:/Documents/GitHub/revstream2/.claude/skills]"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "discovery"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "b2dd3bb3-4cdb-4faa-8715-fe755a9caf85",
+              "name": "Hook Discovery",
+              "kind": 1,
+              "startTimeUnixNano": "1777521945233000000",
+              "endTimeUnixNano": "1777521945233000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 0 hooks in 164.8ms | folders: [/c:/Users/Jax/.copilot/hooks, /c:/Users/Jax/.claude/settings.json, /d:/Documents/GitHub/revstream2/.github/hooks, /d:/Documents/GitHub/revstream2/.claude/settings.local.json, /d:/Documents/GitHub/revstream2/.claude/settings.json]"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "discovery"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "944211e6-9137-49d7-b967-a3d039e16d62",
+              "name": "Resolve Customizations",
+              "kind": 1,
+              "startTimeUnixNano": "1777522021429000000",
+              "endTimeUnixNano": "1777522021429000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 1 customizations (1 listed) in 268.6ms | [skipped] init — model invocation disabled, [skipped] create-prompt — model invocation disabled, [skipped] create-instructions — model invocation disabled, [skipped] create-skill — model invocation disabled, [skipped] create-agent — model invocation disabled, [skipped] create-hook — model invocation disabled, [skill] ai-team-orchestration — plugin, [skill] suggest-awesome-github-copilot-agents — plugin, [skill] suggest-awesome-github-copilot-instructions — plugin, [skill] suggest-awesome-github-copilot-skills — plugin, [skill] context-map — plugin, [skill] refactor-plan — plugin, [skill] what-context-needed — plugin, [skill] doublecheck — plugin, [skill] from-the-other-side-vega — plugin, [skill] polyglot-test-agent — plugin, [skill] power-platform-architect — plugin, [skill] structured-autonomy-generate — plugin, [skill] structured-autonomy-implement — plugin, [skill] structured-autonomy-plan — plugin, [skill] get-search-view-results — extension, [skill] troubleshoot — extension, [skill] agent-customization — extension"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "customization"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "4096e18c-0223-4e39-8909-036fd65776cc",
+              "name": "Resolve Customizations",
+              "kind": 1,
+              "startTimeUnixNano": "1777522055619000000",
+              "endTimeUnixNano": "1777522055619000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 1 customizations (1 listed) in 295.8ms | [skipped] init — model invocation disabled, [skipped] create-prompt — model invocation disabled, [skipped] create-instructions — model invocation disabled, [skipped] create-skill — model invocation disabled, [skipped] create-agent — model invocation disabled, [skipped] create-hook — model invocation disabled, [skill] ai-team-orchestration — plugin, [skill] suggest-awesome-github-copilot-agents — plugin, [skill] suggest-awesome-github-copilot-instructions — plugin, [skill] suggest-awesome-github-copilot-skills — plugin, [skill] context-map — plugin, [skill] refactor-plan — plugin, [skill] what-context-needed — plugin, [skill] doublecheck — plugin, [skill] from-the-other-side-vega — plugin, [skill] polyglot-test-agent — plugin, [skill] power-platform-architect — plugin, [skill] structured-autonomy-generate — plugin, [skill] structured-autonomy-implement — plugin, [skill] structured-autonomy-plan — plugin, [skill] get-search-view-results — extension, [skill] troubleshoot — extension, [skill] agent-customization — extension"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "customization"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "8143c964-7b7b-493b-919b-9ccea9e094f4",
+              "name": "Resolve Customizations",
+              "kind": 1,
+              "startTimeUnixNano": "1777522220120000000",
+              "endTimeUnixNano": "1777522220120000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 1 customizations (1 listed) in 194.6ms | [skipped] init — model invocation disabled, [skipped] create-prompt — model invocation disabled, [skipped] create-instructions — model invocation disabled, [skipped] create-skill — model invocation disabled, [skipped] create-agent — model invocation disabled, [skipped] create-hook — model invocation disabled, [skill] ai-team-orchestration — plugin, [skill] suggest-awesome-github-copilot-agents — plugin, [skill] suggest-awesome-github-copilot-instructions — plugin, [skill] suggest-awesome-github-copilot-skills — plugin, [skill] context-map — plugin, [skill] refactor-plan — plugin, [skill] what-context-needed — plugin, [skill] doublecheck — plugin, [skill] from-the-other-side-vega — plugin, [skill] polyglot-test-agent — plugin, [skill] power-platform-architect — plugin, [skill] structured-autonomy-generate — plugin, [skill] structured-autonomy-implement — plugin, [skill] structured-autonomy-plan — plugin, [skill] get-search-view-results — extension, [skill] troubleshoot — extension, [skill] agent-customization — extension"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "customization"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "14007e5e-c2bc-4f4b-a8dd-38f8460c24d6",
+              "name": "Resolve Customizations",
+              "kind": 1,
+              "startTimeUnixNano": "1777522334938000000",
+              "endTimeUnixNano": "1777522334938000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 1 customizations (1 listed) in 350.7ms | [skipped] init — model invocation disabled, [skipped] create-prompt — model invocation disabled, [skipped] create-instructions — model invocation disabled, [skipped] create-skill — model invocation disabled, [skipped] create-agent — model invocation disabled, [skipped] create-hook — model invocation disabled, [skill] ai-team-orchestration — plugin, [skill] suggest-awesome-github-copilot-agents — plugin, [skill] suggest-awesome-github-copilot-instructions — plugin, [skill] suggest-awesome-github-copilot-skills — plugin, [skill] context-map — plugin, [skill] refactor-plan — plugin, [skill] what-context-needed — plugin, [skill] doublecheck — plugin, [skill] from-the-other-side-vega — plugin, [skill] polyglot-test-agent — plugin, [skill] power-platform-architect — plugin, [skill] structured-autonomy-generate — plugin, [skill] structured-autonomy-implement — plugin, [skill] structured-autonomy-plan — plugin, [skill] get-search-view-results — extension, [skill] troubleshoot — extension, [skill] agent-customization — extension"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "customization"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "1c5ef3b2-93c3-43ed-8366-d9d72ec32ada",
+              "name": "Resolve Customizations",
+              "kind": 1,
+              "startTimeUnixNano": "1777522615774000000",
+              "endTimeUnixNano": "1777522615774000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 1 customizations (1 listed) in 351.0ms | [skipped] init — model invocation disabled, [skipped] create-prompt — model invocation disabled, [skipped] create-instructions — model invocation disabled, [skipped] create-skill — model invocation disabled, [skipped] create-agent — model invocation disabled, [skipped] create-hook — model invocation disabled, [skill] ai-team-orchestration — plugin, [skill] suggest-awesome-github-copilot-agents — plugin, [skill] suggest-awesome-github-copilot-instructions — plugin, [skill] suggest-awesome-github-copilot-skills — plugin, [skill] context-map — plugin, [skill] refactor-plan — plugin, [skill] what-context-needed — plugin, [skill] doublecheck — plugin, [skill] from-the-other-side-vega — plugin, [skill] polyglot-test-agent — plugin, [skill] power-platform-architect — plugin, [skill] structured-autonomy-generate — plugin, [skill] structured-autonomy-implement — plugin, [skill] structured-autonomy-plan — plugin, [skill] get-search-view-results — extension, [skill] troubleshoot — extension, [skill] agent-customization — extension, [custom-agent] pages, [custom-agent] Super-Sleuth, [custom-agent] Untitled-1, [skipped] Plan — not invocable by model, [skipped] Ask — not invocable by model, [custom-agent] Explore, [custom-agent] ai-team-dev, [custom-agent] ai-team-producer, [custom-agent] ai-team-qa, [custom-agent] Meta Agentic Project Scaffold, [custom-agent] Context Architect, [custom-agent] Doublecheck, [custom-agent] Ember, [custom-agent] Polyglot Test Builder, [custom-agent] Polyglot Test Fixer, [custom-agent] Polyglot Test Generator, [custom-agent] Polyglot Test Implementer, [custom-agent] Polyglot Test Linter, [custom-agent] Polyglot Test Planner, [custom-agent] Polyglot Test Researcher, [custom-agent] Polyglot Test Tester, [custom-agent] QA, [custom-agent] RUG, [custom-agent] SWE"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "customization"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "child-ref-16efdd8f-97b1-4e0d-b95c-18b675184d3c",
+              "name": "title",
+              "kind": 1,
+              "startTimeUnixNano": "1777523345843000000",
+              "endTimeUnixNano": "1777523345843000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "e10a61d9-03ce-48ee-8c6d-724139bfdbfc",
+              "name": "Agent Discovery",
+              "kind": 1,
+              "startTimeUnixNano": "1777523347137000000",
+              "endTimeUnixNano": "1777523347137000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 24 agents in 288.3ms | loaded: [pages, super-sleuth, Untitled-1, Plan, Ask, Explore, ai-team-dev, ai-team-producer, ai-team-qa, Meta Agentic Project Scaffold, Context Architect, Doublecheck, Ember, Polyglot Test Builder, Polyglot Test Fixer, Polyglot Test Generator, Polyglot Test Implementer, Polyglot Test Linter, Polyglot Test Planner, Polyglot Test Researcher, Polyglot Test Tester, QA, RUG, SWE] | folders: [/c:/Users/Jax/.copilot/agents, /c:/Users/Jax/.claude/agents, /C:/Users/Jax/AppData/Roaming/Code/User/prompts, /d:/Documents/GitHub/revstream2/.github/agents, /d:/Documents/GitHub/revstream2/.claude/agents]"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "discovery"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "6a9cc431-da47-4425-aada-38dcd309823a",
+              "name": "Instructions Discovery",
+              "kind": 1,
+              "startTimeUnixNano": "1777523347137000000",
+              "endTimeUnixNano": "1777523347137000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 0 instructions in 641.6ms | folders: [/c:/Users/Jax/.copilot/instructions, /c:/Users/Jax/.claude/rules, /C:/Users/Jax/AppData/Roaming/Code/User/prompts, /d:/Documents/GitHub/revstream2/.github/instructions, /d:/Documents/GitHub/revstream2/.claude/rules]"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "discovery"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "4fa14036-649e-4c8a-bc74-dc247c540fbc",
+              "name": "Slash Commands Discovery",
+              "kind": 1,
+              "startTimeUnixNano": "1777523347137000000",
+              "endTimeUnixNano": "1777523347137000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 24 slash commands in 80.3ms | loaded: [plan, get-search-view-results, troubleshoot, agent-customization, init, create-prompt, create-instructions, create-skill, create-agent, create-hook, ai-team-orchestration, awesome-copilot:suggest-awesome-github-copilot-agents, awesome-copilot:suggest-awesome-github-copilot-instructions, awesome-copilot:suggest-awesome-github-copilot-skills, context-engineering:context-map, context-engineering:refactor-plan, context-engineering:what-context-needed, doublecheck, ember:from-the-other-side-vega, polyglot-test-agent, power-platform-architect, structured-autonomy:structured-autonomy-generate, structured-autonomy:structured-autonomy-implement, structured-autonomy:structured-autonomy-plan] | folders: [/C:/Users/Jax/AppData/Roaming/Code/User/prompts, /d:/Documents/GitHub/revstream2/.github/prompts, /c:/Users/Jax/.agents/skills, /c:/Users/Jax/.copilot/skills, /c:/Users/Jax/.claude/skills, /d:/Documents/GitHub/revstream2/.agents/skills, /d:/Documents/GitHub/revstream2/.github/skills, /d:/Documents/GitHub/revstream2/.claude/skills]"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "discovery"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "4462d44d-7bc2-46ef-8bbf-4aa3d0700810",
+              "name": "Skill Discovery",
+              "kind": 1,
+              "startTimeUnixNano": "1777523347138000000",
+              "endTimeUnixNano": "1777523347138000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 23 skills in 109.3ms | loaded: [ai-team-orchestration, suggest-awesome-github-copilot-agents, suggest-awesome-github-copilot-instructions, suggest-awesome-github-copilot-skills, context-map, refactor-plan, what-context-needed, doublecheck, from-the-other-side-vega, polyglot-test-agent, power-platform-architect, structured-autonomy-generate, structured-autonomy-implement, structured-autonomy-plan, get-search-view-results, troubleshoot, agent-customization, init, create-prompt, create-instructions, create-skill, create-agent, create-hook] | folders: [/c:/Users/Jax/.agents/skills, /c:/Users/Jax/.copilot/skills, /c:/Users/Jax/.claude/skills, /d:/Documents/GitHub/revstream2/.agents/skills, /d:/Documents/GitHub/revstream2/.github/skills, /d:/Documents/GitHub/revstream2/.claude/skills]"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "discovery"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "9e07b814-143a-434c-88e1-56792a01bd1f",
+              "name": "Hook Discovery",
+              "kind": 1,
+              "startTimeUnixNano": "1777523347138000000",
+              "endTimeUnixNano": "1777523347138000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_details",
+                  "value": {
+                    "stringValue": "Resolved 0 hooks in 164.8ms | folders: [/c:/Users/Jax/.copilot/hooks, /c:/Users/Jax/.claude/settings.json, /d:/Documents/GitHub/revstream2/.github/hooks, /d:/Documents/GitHub/revstream2/.claude/settings.local.json, /d:/Documents/GitHub/revstream2/.claude/settings.json]"
+                  }
+                },
+                {
+                  "key": "copilot_chat.event_category",
+                  "value": {
+                    "stringValue": "discovery"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "0000000000000047",
+              "name": "user_message",
+              "kind": 1,
+              "startTimeUnixNano": "1777523347402000000",
+              "endTimeUnixNano": "1777523347402000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "turn_start-0000000000000047-0",
+              "name": "turn_start:0",
+              "kind": 1,
+              "startTimeUnixNano": "1777523347402000000",
+              "endTimeUnixNano": "1777523347402000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "000000000000004a",
+              "parentSpanId": "0000000000000047",
+              "name": "manage_todo_list",
+              "kind": 1,
+              "startTimeUnixNano": "1777523348003000000",
+              "endTimeUnixNano": "1777523348006000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "manage_todo_list"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"operation\":\"read\",\"chatSessionResource\":{\"$mid\":1,\"external\":\"vscode-chat-session://local/NzNmNGQyNTAtOTZmOS00NDBmLWJhMzItNmM5MTFjZjVhNzk1\",\"path\":\"/NzNmNGQyNTAtOTZmOS00NDBmLWJhMzItNmM5MTFjZjVhNzk1\",\"scheme\":\"vscode-chat-session\",\"authority\":\"local\"}}"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.result",
+                  "value": {
+                    "stringValue": "No todo list found."
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "000000000000004b",
+              "parentSpanId": "0000000000000047",
+              "name": "chat:claude-haiku-4.5",
+              "kind": 1,
+              "startTimeUnixNano": "1777523348070000000",
+              "endTimeUnixNano": "1777523354278000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-haiku-4.5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "41772"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "643"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "agent-msg-000000000000004b",
+              "parentSpanId": "0000000000000047",
+              "name": "agent_response",
+              "kind": 1,
+              "startTimeUnixNano": "1777523354278000000",
+              "endTimeUnixNano": "1777523354278000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "turn_end-0000000000000047-0",
+              "name": "turn_end:0",
+              "kind": 1,
+              "startTimeUnixNano": "1777523354344000000",
+              "endTimeUnixNano": "1777523354344000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "turn_start-0000000000000047-1",
+              "name": "turn_start:1",
+              "kind": 1,
+              "startTimeUnixNano": "1777523354344000000",
+              "endTimeUnixNano": "1777523354344000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "000000000000004e",
+              "parentSpanId": "0000000000000047",
+              "name": "read_file",
+              "kind": 1,
+              "startTimeUnixNano": "1777523354435000000",
+              "endTimeUnixNano": "1777523354540000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "read_file"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"filePath\":\"c:\\\\Users\\\\Jax\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\\\\034f571df5\\\\resources\\\\app\\\\extensions\\\\copilot\\\\assets\\\\prompts\\\\skills\\\\agent-customization\\\\SKILL.md\",\"startLine\":1,\"endLine\":100}"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.result",
+                  "value": {
+                    "stringValue": "{\"node\":{\"type\":1,\"ctor\":2,\"ctorName\":\"GNe\",\"children\":[{\"type\":1,\"ctor\":2,\"ctorName\":\"yn\",\"children\":[{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":84,\"text\":\"---\\n\",\"references\":[{\"anchor\":{\"$mid\":1,\"fsPath\":\"c:\\\\Users\\\\Jax\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\\\\034f571df5\\\\resources\\\\app\\\\extensions\\\\copilot\\\\assets\\\\prompts\\\\skills\\\\agent-customization\\\\SKILL.md\",\"_sep\":1,\"external\":\"file:///c%3A/Users/Jax/AppData/Local/Programs/Microsoft%20VS%20Code/034f571df5/resources/app/extensions/copilot/assets/prompts/skills/agent-customization/SKILL.md\",\"path\":\"/c:/Users/Jax/AppData/Local/Programs/Microsoft VS Code/034f571df5/resources/app/extensions/copilot/assets/prompts/skills/agent-customization/SKILL.md\",\"scheme\":\"file\"},\"options\":{\"isFromTool\":true}}],\"lineBreakBefore\":true}],\"props\":{\"priority\":84},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":83,\"text\":\"name: agent-customization\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":83},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":82,\"text\":\"user-invocable: false # don't show as slash command, we have sepcialized create-agent, create-instructions, create-hook prompts for that\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":82},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":81,\"text\":\"description: '**WORKFLOW SKILL** — Create, update, review, fix, or debug VS Code agent customization files (.instructions.md, .prompt.md, .agent.md, SKILL.md, copilot-instructions.md, AGENTS.md). USE FOR: saving coding preferences; troubleshooting why instructions/skills/agents are ignored or not invoked; configuring applyTo patterns; defining tool restrictions; creating custom agent modes or specialized workflows; packaging domain knowledge; fixing YAML frontmatter syntax. DO NOT USE FOR: general coding questions (use default agent); runtime debugging or error diagnosis; MCP server configuration (use MCP docs directly); VS Code extension development. INVOKES: file system tools (read/write customization files), ask-questions tool (interview user for requirements), subagents for codebase exploration. FOR SINGLE OPERATIONS: For quick YAML frontmatter fixes or creating a single file from a known pattern, edit the file directly — no skill needed.'\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":81},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":80,\"text\":\"---\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":80},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":79,\"text\":\"\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":79},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":78,\"text\":\"# Agent Customization\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":78},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":77,\"text\":\"\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":77},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":76,\"text\":\"## Decision Flow\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":76},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":75,\"text\":\"\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":75},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":74,\"text\":\"| Primitive | When to Use |\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":74},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":73,\"text\":\"|-----------|-------------|\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":73},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":72,\"text\":\"| agent instructions | Always-on, applies everywhere in the project |\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":72},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":71,\"text\":\"| File Instructions | Explicit via `applyTo` patterns, or on-demand via `description` |\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":71},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":70,\"text\":\"| MCP | Integrates external systems, APIs, or data |\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":70},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":69,\"text\":\"| Hooks | Deterministic shell commands at agent lifecycle points (block tools, auto-format, inject context) |\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":69},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":68,\"text\":\"| Custom Agents | Subagents for context is[truncated]"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "000000000000004f",
+              "parentSpanId": "0000000000000047",
+              "name": "chat:claude-haiku-4.5",
+              "kind": 1,
+              "startTimeUnixNano": "1777523354607000000",
+              "endTimeUnixNano": "1777523357124000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-haiku-4.5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "43876"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "174"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "agent-msg-000000000000004f",
+              "parentSpanId": "0000000000000047",
+              "name": "agent_response",
+              "kind": 1,
+              "startTimeUnixNano": "1777523357124000000",
+              "endTimeUnixNano": "1777523357124000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "turn_end-0000000000000047-1",
+              "name": "turn_end:1",
+              "kind": 1,
+              "startTimeUnixNano": "1777523357135000000",
+              "endTimeUnixNano": "1777523357135000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "turn_start-0000000000000047-2",
+              "name": "turn_start:2",
+              "kind": 1,
+              "startTimeUnixNano": "1777523357135000000",
+              "endTimeUnixNano": "1777523357135000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "0000000000000050",
+              "parentSpanId": "0000000000000047",
+              "name": "read_file",
+              "kind": 1,
+              "startTimeUnixNano": "1777523357194000000",
+              "endTimeUnixNano": "1777523357253000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "read_file"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"filePath\":\"c:\\\\Users\\\\Jax\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\\\\034f571df5\\\\resources\\\\app\\\\extensions\\\\copilot\\\\assets\\\\prompts\\\\skills\\\\agent-customization\\\\references\\\\prompts.md\",\"startLine\":1,\"endLine\":200}"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.result",
+                  "value": {
+                    "stringValue": "{\"node\":{\"type\":1,\"ctor\":2,\"ctorName\":\"GNe\",\"children\":[{\"type\":1,\"ctor\":2,\"ctorName\":\"yn\",\"children\":[{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":80,\"text\":\"# [Prompts (.prompt.md)](https://code.visualstudio.com/docs/copilot/customization/prompt-files)\\n\",\"references\":[{\"anchor\":{\"$mid\":1,\"fsPath\":\"c:\\\\Users\\\\Jax\\\\AppData\\\\Local\\\\Programs\\\\Microsoft VS Code\\\\034f571df5\\\\resources\\\\app\\\\extensions\\\\copilot\\\\assets\\\\prompts\\\\skills\\\\agent-customization\\\\references\\\\prompts.md\",\"_sep\":1,\"external\":\"file:///c%3A/Users/Jax/AppData/Local/Programs/Microsoft%20VS%20Code/034f571df5/resources/app/extensions/copilot/assets/prompts/skills/agent-customization/references/prompts.md\",\"path\":\"/c:/Users/Jax/AppData/Local/Programs/Microsoft VS Code/034f571df5/resources/app/extensions/copilot/assets/prompts/skills/agent-customization/references/prompts.md\",\"scheme\":\"file\"},\"options\":{\"isFromTool\":true}}],\"lineBreakBefore\":true}],\"props\":{\"priority\":80},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":79,\"text\":\"\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":79},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":78,\"text\":\"Reusable task templates triggered on-demand in chat. Single focused task with parameterized inputs.\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":78},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":77,\"text\":\"\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":77},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":76,\"text\":\"## Locations\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":76},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":75,\"text\":\"\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":75},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":74,\"text\":\"| Path | Scope |\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":74},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":73,\"text\":\"|------|-------|\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":73},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":72,\"text\":\"| `.github/prompts/*.prompt.md` | Workspace |\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":72},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":71,\"text\":\"| `<profile>/prompts/*.prompt.md` | User profile |\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":71},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":70,\"text\":\"\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":70},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":69,\"text\":\"## Frontmatter\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":69},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":68,\"text\":\"\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":68},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":67,\"text\":\"```yaml\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":67},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":66,\"text\":\"---\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":66},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":65,\"text\":\"description: \\\"<recommended>\\\" # Optional, but improves discoverability\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":65},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":64,\"text\":\"name: \\\"Prompt Name\\\"          # Optional, defaults to filename\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":64},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":63,\"text\":\"argument-hint: \\\"Task...\\\"     # Optional: hint shown in chat input\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":63},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":62,\"text\":\"agent: \\\"agent\\\"               # Optional: ask, agent, plan, or custom agent\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":62},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":61,\"text\":\"model: \\\"GPT-5 (copilot)\\\"     # Optional: selected model, or fallback array\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":61},\"references\":[]},{\"type\":1,\"ctor\":2,\"ctorName\":\"Z8e\",\"children\":[{\"type\":2,\"priority\":60,\"text\":\"tools: [search, web]    # Optional: built-in, tool sets, MCP (<server>/*), extension\\n\",\"references\":[],\"lineBreakBefore\":true}],\"props\":{\"priority\":60},\"refere[truncated]"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "0000000000000051",
+              "parentSpanId": "0000000000000047",
+              "name": "chat:claude-haiku-4.5",
+              "kind": 1,
+              "startTimeUnixNano": "1777523357274000000",
+              "endTimeUnixNano": "1777523382540000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-haiku-4.5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "44743"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "2215"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "agent-msg-0000000000000051",
+              "parentSpanId": "0000000000000047",
+              "name": "agent_response",
+              "kind": 1,
+              "startTimeUnixNano": "1777523382540000000",
+              "endTimeUnixNano": "1777523382540000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "turn_end-0000000000000047-2",
+              "name": "turn_end:2",
+              "kind": 1,
+              "startTimeUnixNano": "1777523382554000000",
+              "endTimeUnixNano": "1777523382554000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "turn_start-0000000000000047-3",
+              "name": "turn_start:3",
+              "kind": 1,
+              "startTimeUnixNano": "1777523382554000000",
+              "endTimeUnixNano": "1777523382554000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "0000000000000054",
+              "parentSpanId": "0000000000000047",
+              "name": "create_file",
+              "kind": 1,
+              "startTimeUnixNano": "1777523382941000000",
+              "endTimeUnixNano": "1777523382999000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "execute_tool"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.name",
+                  "value": {
+                    "stringValue": "create_file"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.arguments",
+                  "value": {
+                    "stringValue": "{\"filePath\":\"d:\\\\Documents\\\\GitHub\\\\revstream2\\\\.github\\\\prompts\\\\forensic-network-investigation.prompt.md\",\"content\":\"---\\ndescription: \\\"Investigate the Revenue Stream Hijacking conspiracy network (2025-137857) by analyzing entity relationships, fund flows, network positions, and evidence patterns\\\"\\nname: \\\"Forensic Network Investigation\\\"\\nargument-hint: \\\"What aspect of the conspiracy network should I investigate? (e.g., 'Map Rynette Farrar network', 'Trace R10.269M fund flow', 'Who is the apex perpetrator', 'Show conspiracy hierarchy', 'When did fraud escalate', 'Find weak links')\\\"\\nagent: \\\"ask\\\"\\n---\\n\\n# Forensic Network Investigation: Revenue Stream Hijacking Case (2025-137857)\\n\\nYou are investigating a sophisticated financial fraud conspiracy with multiple perpetrators, victims, and intermediaries. Your task is to analyze the network structure, relationships, fund flows, and evidence to expose the conspiracy.\\n\\n## Available Data Models\\n\\nAccess these case files in `data_models/`:\\n- **entities_refined_2025_11_18.json** — 25 persons, organizations, platforms, trusts, domains with roles and involvement\\n- **relations_refined_2025_11_18.json** — 54 relationships (control, ownership, conspiracy, financial, victim-perpetrator)\\n- **events_refined_2025_11_18.json** — 62 events with perpetrators, victims, evidence, financial impact\\n- **timelines_refined_2025_11_18.json** — Events organized by phase (Foundation → Cover-up)\\n\\n## Analysis Tools\\n\\nUse the existing analysis infrastructure:\\n- `network_analysis.py` — Calculate network metrics (centrality, communities, hierarchy, roles)\\n- `network_report_generator.py` — Generate reports (JSON, markdown, CSV, visualization)\\n- Existing reports: `NETWORK_ANALYSIS_REPORT.json`, `NETWORK_ANALYSIS_SUMMARY.md`\\n\\n## Common Investigation Patterns\\n\\n### 1. Map the Network for a Specific Entity\\n**Example**: \\\"Map the Rynette Farrar network\\\"\\n\\nShow all connections for an entity:\\n- List all entities connected to them (incoming and outgoing relationships)\\n- Explain relationship types (control, ownership, conspiracy, financial)\\n- Identify their network role (decision-maker, facilitator, operative, victim)\\n- Find all events where they appear as perpetrator or victim\\n- Calculate their centrality metrics (degree, betweenness, closeness)\\n- Show which communities/hierarchy level they belong to\\n\\n**Output**: Relationship map with entity cards, network position summary, involvement events\\n\\n---\\n\\n### 2. Trace Fund Flow from Source to Recipients\\n**Example**: \\\"Trace the R10.269M fund flow from source to recipients\\\"\\n\\nMap the complete financial chain:\\n- Identify source entities (trust assets, platform revenue, investment accounts)\\n- Follow transfer chain (source → intermediary → recipient) with amounts at each step\\n- Document authorization (who approved, who executed, missing co-signatures)\\n- Identify perpetrators vs. innocent intermediaries\\n- Highlight false authorizations and fraudulent redirections\\n- Calculate total stolen, total recovered, total distributed to perpetrators\\n\\n**Output**: Fund flow diagram, transfer chain breakdown, authorization gaps, final recipient analysis\\n\\n---\\n\\n### 3. Identify Apex Perpetrator via Network Position\\n**Example**: \\\"Who is the apex perpetrator based on network position?\\\"\\n\\nAnalyze network centrality and control:\\n- Calculate degree centrality (how many direct connections)\\n- Calculate betweenness centrality (gatekeeping role in network)\\n- Calculate closeness centrality (distance to other actors)\\n- Identify bottleneck entities (high betweenness = critical coordinators)\\n- Show which relationships they control directly vs. through intermediaries\\n- Document what events they approve, execute, or authorize\\n- Compare to other perpetrators to identify hierarchy\\n\\n**Output**: Centrality ranking table, gatekeeping analysis, control comparison, hierarchy positioning\\n\\n---\\n\\n### 4. Analyze Conspiracy Hierarchy and Family Involvement\\n**Example**: \\\"Show the conspiracy hierarchy and family involvement\\\"\\n\\nMap organizational structure and family groups:\\n- Identify decision-maker level (who sets strategy, who benefits most)\\n- Identify facilitator level (who enables execution, who has access)\\n- Identify operative level (who executes transactions, who takes risks)\\n- Identify family relationships (who are relatives, who share households)\\n- Show which family members participated, what roles, how they benefited\\n- Document shared events, joint accounts, coordinated timing\\n- Calculate aggregate financial benefit to family vs. individuals\\n\\n**Output**: Hierarchy diagram (decision makers → facilitators → operatives), family tree with roles, benefit distribution\\n\\n---\\n\\n### 5. Analyze When and Why Fraud Escalated\\n**Example**: \\\"When and why did the fraud escalate?\\\"\\n\\nExamine timeline of escalation:\\n- Identify trigger events (when did threats emerge, when did victims start investigating)\\n- Show baseline period[truncated]"
+                  }
+                },
+                {
+                  "key": "gen_ai.tool.call.result",
+                  "value": {
+                    "stringValue": "{\"node\":{\"type\":1,\"ctor\":2,\"ctorName\":\"WI\",\"children\":[{\"type\":2,\"priority\":9007199254740991,\"text\":\"The following files were successfully edited:\",\"lineBreakBefore\":false},{\"type\":2,\"priority\":9007199254740991,\"text\":\"\\n\",\"lineBreakBefore\":false},{\"type\":2,\"priority\":9007199254740991,\"text\":\"d:\\\\Documents\\\\GitHub\\\\revstream2\\\\.github\\\\prompts\\\\forensic-network-investigation.prompt.md\",\"lineBreakBefore\":false},{\"type\":2,\"priority\":9007199254740991,\"text\":\"\\n\",\"lineBreakBefore\":false}],\"props\":{},\"references\":[]}}"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "0000000000000055",
+              "parentSpanId": "0000000000000047",
+              "name": "chat:claude-haiku-4.5",
+              "kind": 1,
+              "startTimeUnixNano": "1777523383049000000",
+              "endTimeUnixNano": "1777523389342000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "chat"
+                  }
+                },
+                {
+                  "key": "gen_ai.request.model",
+                  "value": {
+                    "stringValue": "claude-haiku-4.5"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.input_tokens",
+                  "value": {
+                    "intValue": "47003"
+                  }
+                },
+                {
+                  "key": "gen_ai.usage.output_tokens",
+                  "value": {
+                    "intValue": "481"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "agent-msg-0000000000000055",
+              "parentSpanId": "0000000000000047",
+              "name": "agent_response",
+              "kind": 1,
+              "startTimeUnixNano": "1777523389342000000",
+              "endTimeUnixNano": "1777523389342000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            },
+            {
+              "traceId": "exported-trace",
+              "spanId": "turn_end-0000000000000047-3",
+              "name": "turn_end:3",
+              "kind": 1,
+              "startTimeUnixNano": "1777523389361000000",
+              "endTimeUnixNano": "1777523389361000000",
+              "attributes": [
+                {
+                  "key": "gen_ai.operation.name",
+                  "value": {
+                    "stringValue": "core_event"
+                  }
+                }
+              ],
+              "events": [],
+              "status": {
+                "code": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "copilotChat": {
+    "exportedAt": "2026-05-22T02:34:02.050Z",
+    "exporterVersion": "",
+    "sessionId": "73f4d250-96f9-440f-ba32-6c911cf5a795",
+    "sessionTitle": "Network analysis and agent creation"
+  }
+}
