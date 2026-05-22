@@ -1,0 +1,439 @@
+{
+  "case_id": "2025-137857",
+  "workflow": "complete-analysis",
+  "timestamp": "2026-05-22T05:12:19.781535",
+  "findings": {
+    "perpetrators": [
+      {
+        "entity_id": "PERSON_001",
+        "name": "Peter Andrew Faucitt",
+        "role": "primary_perpetrator",
+        "financial_benefit": 10269727.9,
+        "involvement_events": 11,
+        "primary_actions": [
+          "trust_structure_manipulation",
+          "unauthorized_transfers",
+          "trustee_misconduct",
+          "warehouse_popi_violations",
+          "account_manipulation",
+          "trust_asset_misappropriation",
+          "trust_breach"
+        ],
+        "relationships": [
+          "trustee_of_family_trust",
+          "director_of_RWD_ZA",
+          "co_conspirator_with_PERSON_002"
+        ],
+        "conflict_of_interest": {},
+        "additional_notes": ""
+      },
+      {
+        "entity_id": "PERSON_002",
+        "name": "Rynette Farrar",
+        "role": "co_conspirator",
+        "financial_benefit": 4276832.85,
+        "involvement_events": 8,
+        "primary_actions": [
+          "payment_redirection_scheme",
+          "bank_account_change_letter",
+          "unauthorized_beneficiary_changes",
+          "domain_registration_identity_fraud",
+          "email_impersonation_pattern",
+          "coordinated_fund_diversions"
+        ],
+        "relationships": [
+          "co_conspirator_with_PERSON_001",
+          "mother_of_PERSON_003",
+          "financial_controller"
+        ],
+        "conflict_of_interest": {},
+        "additional_notes": "Controlled accounts system, potentially opened 8 ABSA accounts using stolen card"
+      },
+      {
+        "entity_id": "PERSON_007",
+        "name": "Danie Bantjies",
+        "role": "accountant_and_unknown_trustee",
+        "financial_benefit": 0.0,
+        "involvement_events": 3,
+        "primary_actions": [
+          "accounting_system_control_with_rynette",
+          "audit_request_dismissal",
+          "stock_adjustment_fraud_concealment",
+          "trust_violations_as_unknown_trustee",
+          "sars_audit_payment_instructions",
+          "commissioner_of_oaths_misconduct",
+          "trial_balance_distribution"
+        ],
+        "relationships": [
+          "co_conspirator_with_PERSON_001",
+          "co_conspirator_with_PERSON_002",
+          "unknown_trustee_of_TRUST_001",
+          "accountant_for_regima_group",
+          "creditor_with_motive",
+          "debtor_to_TRUST_001",
+          "commissioner_of_oaths",
+          "email_correspondent_bernadine_wright"
+        ],
+        "conflict_of_interest": {
+          "triple_conflict": "trustee_debtor_accountant",
+          "roles": [
+            "trustee_of_TRUST_001",
+            "debtor_to_TRUST_001_R18685000",
+            "accountant_for_regima_group",
+            "commissioner_of_oaths"
+          ],
+          "motive": "prevent_discovery_of_R18685000_debt"
+        },
+        "additional_notes": "Unknown trustee status, dismissed audit request June 10, 2025 (4 days after fraud exposure), controlled accounting system with Rynette using Peter's email, owes R18.685M to trust creating massive conflict of interest, certified Peter's affidavit as Commissioner of Oaths despite material omissions, sent trial balance email Aug 13, 2020; Sent trial balance email Aug 13, 2020 to Bernadine Wright; learned of criminal matters June 10, 2025; ENS Africa suppressed criminal information from Court Aug 29, 2025"
+      }
+    ],
+    "hierarchy": {
+      "hierarchy_analysis": {
+        "apex": [
+          {
+            "entity_id": "PERSON_001",
+            "name": "Peter Andrew Faucitt",
+            "role": "primary_perpetrator",
+            "financial_benefit": 10269727.9,
+            "involvement_events": 11,
+            "primary_actions": [
+              "trust_structure_manipulation",
+              "unauthorized_transfers",
+              "trustee_misconduct",
+              "warehouse_popi_violations",
+              "account_manipulation",
+              "trust_asset_misappropriation",
+              "trust_breach"
+            ],
+            "relationships": [
+              "trustee_of_family_trust",
+              "director_of_RWD_ZA",
+              "co_conspirator_with_PERSON_002"
+            ],
+            "conflict_of_interest": {},
+            "additional_notes": "",
+            "hierarchy_score": 70.0
+          }
+        ],
+        "facilitators": [
+          {
+            "entity_id": "PERSON_002",
+            "name": "Rynette Farrar",
+            "role": "co_conspirator",
+            "financial_benefit": 4276832.85,
+            "involvement_events": 8,
+            "primary_actions": [
+              "payment_redirection_scheme",
+              "bank_account_change_letter",
+              "unauthorized_beneficiary_changes",
+              "domain_registration_identity_fraud",
+              "email_impersonation_pattern",
+              "coordinated_fund_diversions"
+            ],
+            "relationships": [
+              "co_conspirator_with_PERSON_001",
+              "mother_of_PERSON_003",
+              "financial_controller"
+            ],
+            "conflict_of_interest": {},
+            "additional_notes": "Controlled accounts system, potentially opened 8 ABSA accounts using stolen card",
+            "hierarchy_score": 67.5
+          }
+        ],
+        "operatives": [
+          {
+            "entity_id": "PERSON_007",
+            "name": "Danie Bantjies",
+            "role": "accountant_and_unknown_trustee",
+            "financial_benefit": 0.0,
+            "involvement_events": 3,
+            "primary_actions": [
+              "accounting_system_control_with_rynette",
+              "audit_request_dismissal",
+              "stock_adjustment_fraud_concealment",
+              "trust_violations_as_unknown_trustee",
+              "sars_audit_payment_instructions",
+              "commissioner_of_oaths_misconduct",
+              "trial_balance_distribution"
+            ],
+            "relationships": [
+              "co_conspirator_with_PERSON_001",
+              "co_conspirator_with_PERSON_002",
+              "unknown_trustee_of_TRUST_001",
+              "accountant_for_regima_group",
+              "creditor_with_motive",
+              "debtor_to_TRUST_001",
+              "commissioner_of_oaths",
+              "email_correspondent_bernadine_wright"
+            ],
+            "conflict_of_interest": {
+              "triple_conflict": "trustee_debtor_accountant",
+              "roles": [
+                "trustee_of_TRUST_001",
+                "debtor_to_TRUST_001_R18685000",
+                "accountant_for_regima_group",
+                "commissioner_of_oaths"
+              ],
+              "motive": "prevent_discovery_of_R18685000_debt"
+            },
+            "additional_notes": "Unknown trustee status, dismissed audit request June 10, 2025 (4 days after fraud exposure), controlled accounting system with Rynette using Peter's email, owes R18.685M to trust creating massive conflict of interest, certified Peter's affidavit as Commissioner of Oaths despite material omissions, sent trial balance email Aug 13, 2020; Sent trial balance email Aug 13, 2020 to Bernadine Wright; learned of criminal matters June 10, 2025; ENS Africa suppressed criminal information from Court Aug 29, 2025",
+            "hierarchy_score": 16.25
+          }
+        ]
+      },
+      "hierarchy_scores": {
+        "apex_threshold": 70,
+        "facilitator_threshold": 40,
+        "operative_threshold": 0
+      },
+      "total_identified": 3,
+      "apex_count": 1,
+      "facilitator_count": 1,
+      "operative_count": 1,
+      "role_description": "Apex=Strategic control, Facilitators=Execution enablers, Operatives=Direct executors"
+    },
+    "financial_analysis": {
+      "financial_centrality": {
+        "total_stolen": 14546560.75,
+        "perpetrator_count": 3,
+        "perpetrators": [
+          {
+            "name": "Peter Andrew Faucitt",
+            "entity_id": "PERSON_001",
+            "amount": 10269727.9,
+            "percentage": 70.6,
+            "involvement_events": 11,
+            "amount_per_event": 933611.6272727273
+          },
+          {
+            "name": "Rynette Farrar",
+            "entity_id": "PERSON_002",
+            "amount": 4276832.85,
+            "percentage": 29.4,
+            "involvement_events": 8,
+            "amount_per_event": 534604.10625
+          }
+        ],
+        "benefit_distribution_percent": [
+          70.59901014746734,
+          29.400989852532668
+        ],
+        "gini_coefficient": 0.20599010147467345,
+        "concentration_analysis": {
+          "top_perpetrator_percentage": 70.6,
+          "top_2_perpetrators_percentage": 100.0,
+          "concentration_level": "high"
+        }
+      },
+      "average_per_perpetrator": 4848853.583333333,
+      "max_benefit": 10269727.9,
+      "min_benefit": 4276832.85,
+      "wealth_inequality": 0.20599010147467345
+    },
+    "escalation": {
+      "escalation_analysis": {
+        "timeline": {
+          "2017": {
+            "event_count": 2,
+            "events": [
+              "First ReZonance Invoice to RST",
+              "ReZonance Service Expansion"
+            ]
+          },
+          "2019": {
+            "event_count": 2,
+            "events": [
+              "Financial Year Commencement RST/SLG",
+              "Financial Year Commencement Villa Via"
+            ]
+          },
+          "2020": {
+            "event_count": 9,
+            "events": [
+              "Multiple Adjusting Journal Entries",
+              "Unknown",
+              "Year-End Adjustments and Interest Payment"
+            ]
+          },
+          "2021": {
+            "event_count": 1,
+            "events": [
+              "Adderory Companies Registration - Pre-Planning Phase"
+            ]
+          },
+          "2022": {
+            "event_count": 2,
+            "events": [
+              "ReZonance Opening Balance Debt",
+              "First Structured Payment to ReZonance"
+            ]
+          },
+          "2023": {
+            "event_count": 4,
+            "events": [
+              "Kayla Pretorius Murder",
+              "ReZonance Final Balance Persistent Debt",
+              "False Payment Claim #1 to ReZonance"
+            ]
+          },
+          "2025": {
+            "event_count": 42,
+            "events": [
+              "Chantal Letter - Kayla Estate Finalization",
+              "Chantal Delivers Letter About Kayla Estate Finalization",
+              "R900,000 Unauthorized Transfers from RegimA SA"
+            ]
+          }
+        },
+        "crisis_indicators": [
+          {
+            "date": "2025-01-15",
+            "title": "Chantal Delivers Letter About Kayla Estate Finalization",
+            "significance": "continued_exploitation_of_deceased_victims_estate"
+          },
+          {
+            "date": "2025-02-25",
+            "title": "R5.2M SLG Stock Missing & Large Invoice",
+            "significance": "systematic_asset_stripping_transfer_pricing_fraud"
+          },
+          {
+            "date": "2025-03-01",
+            "title": "RegimA SA Revenue Diversion Started",
+            "significance": "initial_implementation_of_systematic_financial_fraud"
+          },
+          {
+            "date": "2025-03-01",
+            "title": "R5.4M Stock Disappears from Strategic Logistics",
+            "significance": "largest_single_identifiable_theft_transfer_pricing_fraud"
+          },
+          {
+            "date": "2025-03-15",
+            "title": "R5.4M Stock Adjustment Processed Without Investigation",
+            "significance": "accounting_fraud_breach_of_professional_duty"
+          },
+          {
+            "date": "2025-03-30",
+            "title": "Two Years Unallocated Expenses Dumped",
+            "significance": "systematic_financial_manipulation_and_pressure_tactics"
+          },
+          {
+            "date": "2025-04-14",
+            "title": "Bank Account Change Letter for RegimA Worldwide",
+            "significance": "first_documented_act_in_coordinated_scheme"
+          },
+          {
+            "date": "2025-05-15",
+            "title": "Unauthorized Transfers (R850K+)",
+            "significance": "direct_evidence_of_financial_authority_abuse_and_theft"
+          },
+          {
+            "date": "2025-05-15",
+            "title": "Unknown",
+            "significance": "trigger_event_for_coordinated_cover_up"
+          },
+          {
+            "date": "2025-05-22",
+            "title": "Shopify Audit Trail Hijacking",
+            "significance": "consciousness_of_guilt_through_evidence_destruction"
+          },
+          {
+            "date": "2025-05-29",
+            "title": "Domain Registration (Identity Fraud)",
+            "significance": "family_conspiracy_escalation_and_digital_impersonation"
+          },
+          {
+            "date": "2025-06-06",
+            "title": "Daniel Finalizes Fraud Reports",
+            "significance": "fraud_discovery_and_documentation"
+          },
+          {
+            "date": "2025-06-10",
+            "title": "Bantjies Dismisses Audit Request",
+            "significance": "consciousness_of_guilt_audit_blocking_breach_of_fiduciary_duty"
+          },
+          {
+            "date": "2025-06-10",
+            "title": "Bantjies Dismisses Audit Request",
+            "significance": "consciousness_of_guilt_conflict_of_interest_breach_of_fiduciary_duty"
+          },
+          {
+            "date": "2025-06-10",
+            "title": "Unknown",
+            "significance": "consciousness_of_guilt_and_fraud_concealment"
+          },
+          {
+            "date": "2025-06-20",
+            "title": "Email Impersonation Pattern and Domain Switch Instruction",
+            "significance": "pattern_of_impersonation_supporting_criminal_conspiracy_charges"
+          },
+          {
+            "date": "2025-06-20",
+            "title": "Domain Switch Email Instruction",
+            "significance": "active_customer_hijacking_and_revenue_diversion"
+          },
+          {
+            "date": "2025-07-08",
+            "title": "Warehouse POPI Violations",
+            "significance": "documented_evidence_of_systematic_business_destruction"
+          },
+          {
+            "date": "2025-07-25",
+            "title": "Trust Asset Misappropriation",
+            "significance": "documented_theft_of_trust_property_and_breach_of_fiduciary_duty"
+          },
+          {
+            "date": "2025-08-15",
+            "title": "Gee Email Explaining Domain Switch Instruction",
+            "significance": "witness_testimony_confirming_customer_hijacking"
+          }
+        ],
+        "rapid_response_patterns": [],
+        "consciousness_of_guilt": [],
+        "acceleration_factors": {
+          "baseline_avg": 3.3333333333333335,
+          "crisis_avg": 42.0,
+          "acceleration_factor": 12.6
+        }
+      },
+      "years_analyzed": [
+        "2017",
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2025"
+      ],
+      "peak_activity_year": "2025",
+      "total_events": 62,
+      "baseline_period": "2017-2023",
+      "crisis_period": "2025+",
+      "acceleration_detected": true
+    },
+    "network_structure": {
+      "entity_types": {
+        "antagonist": 3,
+        "victim": 4,
+        "neutral": 5,
+        "accomplice": 3,
+        "instrument_of_fraud": 3,
+        "affected_entity": 1,
+        "legitimate_business": 1,
+        "victim_entity": 4,
+        "instrument_of_wealth_transfer": 1,
+        "central_infrastructure": 1,
+        "legitimate_asset": 1
+      },
+      "relationship_types": {
+        "control": 4,
+        "ownership": 8,
+        "conspiracy": 3,
+        "financial": 1,
+        "other": 38
+      },
+      "total_entities": 27,
+      "total_relationships": 54,
+      "network_density": "medium"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "case_id": "2025-137857",
+  "workflow": "complete-analysis",
+  "timestamp": "2026-05-22T05:02:58.714503",
+  "findings": {
+    "perpetrators": {},
+    "hierarchy": {
+      "status": "placeholder",
+      "details": "Hierarchy analysis would go here"
+    },
+    "financial_analysis": {
+      "status": "placeholder",
+      "details": "Financial centrality analysis would go here"
+    },
+    "escalation": {
+      "status": "placeholder",
+      "details": "Escalation analysis would go here"
+    },
+    "network_structure": {
+      "status": "placeholder",
+      "details": "Network structure analysis would go here"
+    }
+  }
+}

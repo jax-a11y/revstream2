@@ -1,0 +1,551 @@
+{
+  "case_id": "2025-137857",
+  "workflow": "fund-tracing",
+  "timestamp": "2026-05-22T05:09:45.722965",
+  "findings": {
+    "sources": [
+      {
+        "entity_id": "TRUST_001",
+        "name": "Family Trust",
+        "type": "victim_entity",
+        "role": "family_trust_structure_manipulated",
+        "financial_impact": {},
+        "description": "Potential source fund from Family Trust"
+      },
+      {
+        "entity_id": "TRUST_001",
+        "name": "Faucitt Family Trust",
+        "type": "victim_entity",
+        "role": "family_trust_structure_manipulated",
+        "financial_impact": {
+          "debt_owed_by_trustee": "R18,685,000",
+          "debtor": "PERSON_007"
+        },
+        "description": "Potential source fund from Faucitt Family Trust"
+      }
+    ],
+    "transfers": {
+      "total_transfers": 26,
+      "total_amount": 108515605.19,
+      "transfers": [
+        {
+          "event_id": "EVENT_H001",
+          "date": "2017-06-30",
+          "title": "First ReZonance Invoice to RST",
+          "amount": 250.8,
+          "category": "business_relationship",
+          "perpetrators": [
+            "ORG_008"
+          ],
+          "victims": [],
+          "entities_involved": [
+            "ORG_008",
+            "ORG_002"
+          ],
+          "description": "First invoice from ReZonance to RegimA Skin Treatments for Google GSuite services (R250.80), marking the beginning of business relationship",
+          "legal_significance": "establishment_of_business_relationship_and_trust",
+          "evidence": [
+            "invoice_2017_06_30",
+            "service_agreement"
+          ],
+          "pattern": "historical_foundation"
+        },
+        {
+          "event_id": "EVENT_H005",
+          "date": "2020-02-20",
+          "title": "Multiple Adjusting Journal Entries",
+          "amount": 1642000.0,
+          "category": "financial_manipulation",
+          "perpetrators": [
+            "PERSON_001",
+            "PERSON_002",
+            "PERSON_007"
+          ],
+          "victims": [
+            "ORG_001",
+            "ORG_004"
+          ],
+          "entities_involved": [
+            "ORG_001",
+            "ORG_004",
+            "ORG_002"
+          ],
+          "description": "Significant inter-company cost reallocations: RWW R500K stock provision write-back, RWW R810K admin fee reallocation, SLG R252K admin fee reallocation, SLG R80K production cost transfer to RST",
+          "legal_significance": "evidence_of_systematic_inter_company_manipulation",
+          "evidence": [
+            "trial_balance_AJEs",
+            "general_ledger_entries"
+          ],
+          "pattern": "historical_foundation"
+        },
+        {
+          "event_id": "EVENT_051",
+          "date": "2020-02-20",
+          "title": "Unknown Transfer",
+          "amount": 1642000.0,
+          "category": "financial_manipulation",
+          "perpetrators": [
+            "PERSON_007"
+          ],
+          "victims": [],
+          "entities_involved": [
+            "ORG_001",
+            "ORG_002",
+            "ORG_005"
+          ],
+          "description": "Multiple adjusting journal entries across entities for inter-company cost reallocations",
+          "legal_significance": "establishes_pattern_of_financial_manipulation",
+          "evidence": [],
+          "pattern": ""
+        },
+        {
+          "event_id": "EVENT_H006",
+          "date": "2020-02-28",
+          "title": "Year-End Adjustments and Interest Payment",
+          "amount": 1948334.09,
+          "category": "financial_manipulation",
+          "perpetrators": [
+            "PERSON_001",
+            "PERSON_002",
+            "PERSON_007"
+          ],
+          "victims": [
+            "ORG_004",
+            "ORG_001"
+          ],
+          "entities_involved": [
+            "ORG_004",
+            "ORG_002",
+            "ORG_001"
+          ],
+          "description": "SLG pays R414,334.09 interest to RST per loan agreement, RST advances R750K loan to RWW for production costs, Directors' fee adjustment R784K in RST",
+          "legal_significance": "profit_concentration_in_director_controlled_entity",
+          "evidence": [
+            "REG-TRIALBALANCE.xlsx",
+            "SL-TRIALBALANCE2020.xlsx"
+          ],
+          "pattern": "historical_foundation"
+        },
+        {
+          "event_id": "EVENT_052",
+          "date": "2020-02-28",
+          "title": "Unknown Transfer",
+          "amount": 414334.09,
+          "category": "financial_structure",
+          "perpetrators": [
+            "PERSON_007"
+          ],
+          "victims": [],
+          "entities_involved": [
+            "ORG_002",
+            "ORG_005"
+          ],
+          "description": "SLG pays R414,334.09 interest to RST per loan agreement",
+          "legal_significance": "establishes_inter_company_financial_relationships",
+          "evidence": [],
+          "pattern": ""
+        },
+        {
+          "event_id": "EVENT_H007",
+          "date": "2020-04-30",
+          "title": "Villa Via Year-End Profit Extraction",
+          "amount": 22800000.0,
+          "category": "profit_extraction",
+          "perpetrators": [
+            "PERSON_001"
+          ],
+          "victims": [
+            "ORG_004",
+            "ORG_001",
+            "TRUST_001"
+          ],
+          "entities_involved": [
+            "ORG_005"
+          ],
+          "description": "Villa Via generates R4.4M monthly rental income with R3.7M profit, Members loan account R22.8M indicating systematic capital extraction",
+          "legal_significance": "evidence_of_capital_extraction_mechanism",
+          "evidence": [
+            "VV-TRIALBALANCEAPR20202.xlsx"
+          ],
+          "pattern": "historical_foundation"
+        },
+        {
+          "event_id": "EVENT_053",
+          "date": "2020-04-30",
+          "title": "Unknown Transfer",
+          "amount": 22800000.0,
+          "category": "profit_extraction",
+          "perpetrators": [
+            "PERSON_001",
+            "PERSON_007"
+          ],
+          "victims": [],
+          "entities_involved": [
+            "ORG_004"
+          ],
+          "description": "Villa Via financial year-end showing R3.7M profit and R22.8M members loan",
+          "legal_significance": "evidence_of_capital_extraction_through_members_loan",
+          "evidence": [],
+          "pattern": ""
+        },
+        {
+          "event_id": "EVENT_D001",
+          "date": "2022-03-01",
+          "title": "ReZonance Opening Balance Debt",
+          "amount": 971587.93,
+          "category": "debt_accumulation",
+          "perpetrators": [
+            "PERSON_001",
+            "PERSON_002"
+          ],
+          "victims": [
+            "ORG_008",
+            "PERSON_008"
+          ],
+          "entities_involved": [
+            "regima_group",
+            "ORG_008"
+          ],
+          "description": "Opening balance showing substantial accumulated debt to ReZonance (R971,587.93), evidence of unpaid services over extended period",
+          "legal_significance": "systematic_non_payment_of_legitimate_debts",
+          "evidence": [
+            "rezonance_account_statements",
+            "aged_debtor_reports"
+          ],
+          "pattern": "debt_accumulation"
+        },
+        {
+          "event_id": "EVENT_D002",
+          "date": "2022-07-11",
+          "title": "First Structured Payment to ReZonance",
+          "amount": 40000.0,
+          "category": "debt_management",
+          "perpetrators": [
+            "ORG_002"
+          ],
+          "victims": [],
+          "entities_involved": [
+            "regima_group",
+            "ORG_008"
+          ],
+          "description": "First structured payment to ReZonance (R40,000), attempt to manage debt through partial payments",
+          "legal_significance": "acknowledgment_of_debt_through_payment",
+          "evidence": [
+            "payment_records",
+            "bank_statements"
+          ],
+          "pattern": "debt_accumulation"
+        },
+        {
+          "event_id": "EVENT_H010",
+          "date": "2023-01-01",
+          "title": "Kayla Pretorius Murder",
+          "amount": 1035000.0,
+          "category": "criminal_event",
+          "perpetrators": [
+            "PERSON_002"
+          ],
+          "victims": [
+            "PERSON_008"
+          ],
+          "entities_involved": [
+            "ORG_008"
+          ],
+          "description": "Murder of Kayla Pretorius, creating estate complications, law enforcement investigation, and family trauma. Estate includes ReZonance debt of R1,035,000.",
+          "legal_significance": "estate_complications_law_enforcement_investigation",
+          "evidence": [
+            "police_reports_pending",
+            "estate_documentation_pending"
+          ],
+          "pattern": "historical_foundation_phase"
+        },
+        {
+          "event_id": "EVENT_D003",
+          "date": "2023-02-28",
+          "title": "ReZonance Final Balance Persistent Debt",
+          "amount": 1035361.34,
+          "category": "debt_accumulation",
+          "perpetrators": [
+            "PERSON_001",
+            "PERSON_002"
+          ],
+          "victims": [
+            "ORG_008",
+            "PERSON_008"
+          ],
+          "entities_involved": [
+            "regima_group",
+            "ORG_008"
+          ],
+          "description": "Final balance showing persistent debt to ReZonance (R1,035,361.34) despite payment claims, debt continues to grow",
+          "legal_significance": "ongoing_systematic_non_payment",
+          "evidence": [
+            "rezonance_final_statement",
+            "payment_reconciliation"
+          ],
+          "pattern": "debt_accumulation"
+        },
+        {
+          "event_id": "EVENT_D004",
+          "date": "2023-03-15",
+          "title": "False Payment Claim #1 to ReZonance",
+          "amount": 470000.0,
+          "category": "fraud",
+          "perpetrators": [
+            "PERSON_001",
+            "PERSON_002"
+          ],
+          "victims": [
+            "ORG_008",
+            "PERSON_008"
+          ],
+          "entities_involved": [
+            "regima_group",
+            "ORG_008"
+          ],
+          "description": "RegimA claims payment of R470,000 to ReZonance not reflected in ReZonance records, first documented false payment claim",
+          "legal_significance": "fraudulent_payment_claims_to_conceal_debt",
+          "evidence": [
+            "false_payment_documentation",
+            "rezonance_account_reconciliation"
+          ],
+          "pattern": "debt_accumulation"
+        },
+        {
+          "event_id": "EVENT_D005",
+          "date": "2023-09-20",
+          "title": "False Payment Claim #2 to ReZonance",
+          "amount": 765361.34,
+          "category": "fraud",
+          "perpetrators": [
+            "PERSON_001",
+            "PERSON_002"
+          ],
+          "victims": [
+            "ORG_008",
+            "PERSON_008"
+          ],
+          "entities_involved": [
+            "regima_group",
+            "ORG_008"
+          ],
+          "description": "Additional false payment claims totaling R765,361.34 to ReZonance, escalation of fraudulent payment claims",
+          "legal_significance": "systematic_fraud_pattern_escalation",
+          "evidence": [
+            "false_payment_claims_documentation"
+          ],
+          "pattern": "debt_accumulation"
+        },
+        {
+          "event_id": "EVENT_023",
+          "date": "2025-01-15",
+          "title": "Chantal Letter - Kayla Estate Finalization",
+          "amount": 1035000.0,
+          "category": "estate_exploitation",
+          "perpetrators": [
+            "PERSON_011"
+          ],
+          "victims": [
+            "estate_of_kayla"
+          ],
+          "entities_involved": [
+            "PERSON_011",
+            "ORG_008"
+          ],
+          "description": "Chantal delivered letter mentioning Kayla estate finalization, indicating ongoing exploitation of deceased victim's estate.",
+          "legal_significance": "ongoing_estate_exploitation_pattern",
+          "evidence": [
+            "estate_documentation_pending",
+            "letter_from_chantal"
+          ],
+          "pattern": "pre_foundation_phase"
+        },
+        {
+          "event_id": "EVENT_022",
+          "date": "2025-02-14",
+          "title": "R900,000 Unauthorized Transfers from RegimA SA",
+          "amount": 900000.0,
+          "category": "financial_manipulation",
+          "perpetrators": [
+            "PERSON_001"
+          ],
+          "victims": [
+            "PERSON_005"
+          ],
+          "entities_involved": [
+            "ORG_006"
+          ],
+          "description": "Peter made unauthorized transfers of R900,000 from RegimA SA without Daniel's authority as co-director",
+          "legal_significance": "unauthorized_transfer_without_co_director_authority",
+          "evidence": [
+            "bank_transfer_records",
+            "authorization_absence"
+          ],
+          "pattern": "foundation_phase"
+        },
+        {
+          "event_id": "EVENT_028",
+          "date": "2025-02-25",
+          "title": "R5.2M SLG Stock Missing & Large Invoice",
+          "amount": 5200000.0,
+          "category": "transfer_pricing_fraud",
+          "perpetrators": [
+            "PERSON_001",
+            "PERSON_002",
+            "PERSON_007",
+            "PERSON_003"
+          ],
+          "victims": [
+            "ORG_004",
+            "TRUST_001"
+          ],
+          "entities_involved": [
+            "ORG_004",
+            "ORG_002",
+            "ORG_009"
+          ],
+          "description": "R5.2M SLG stock missing with simultaneous R5.2M invoice from SLG to RST. Stock physically disappeared, same type later supplied by Adderory to RegimA. Systematic asset stripping begins.",
+          "legal_significance": "systematic_asset_stripping_transfer_pricing_fraud",
+          "evidence": [
+            "financial_records",
+            "invoice_documentation",
+            "stock_reconciliation"
+          ],
+          "pattern": "foundation_phase"
+        },
+        {
+          "event_id": "EVENT_024",
+          "date": "2025-03-01",
+          "title": "R5.4M Stock Disappears from Strategic Logistics",
+          "amount": 5400000.0,
+          "category": "transfer_pricing_fraud",
+          "perpetrators": [
+            "PERSON_001",
+            "PERSON_002",
+            "PERSON_007",
+            "PERSON_003"
+          ],
+          "victims": [
+            "ORG_004",
+            "TRUST_001"
+          ],
+          "entities_involved": [
+            "ORG_004",
+            "PERSON_003"
+          ],
+          "description": "R5.4M worth of stock physically disappears from Strategic Logistics warehouse. Represents 46% of annual sales, 10x historical adjustment rate. Same stock type later supplied by Adderory (Rynette's son's company) to RegimA.",
+          "legal_significance": "largest_single_identifiable_theft_transfer_pricing_fraud",
+          "evidence": [
+            "stock_reconciliation_reports",
+            "warehouse_records",
+            "adderory_supply_documentation"
+          ],
+          "pattern": "foundation_phase"
+        },
+        {
+          "event_id": "EVENT_002",
+          "date": "2025-03-15",
+          "title": "Trust Structure Establishment",
+          "amount": 2851247.35,
+          "category": "trust_violations",
+          "perpetrators": [
+            "PERSON_001"
+          ],
+          "victims": [
+            "TRUST_001",
+            "beneficiaries"
+          ],
+          "entities_involved": [
+            "TRUST_001"
+          ],
+          "description": "Foundation for R2.85M+ trust violations established through trust structure manipulation",
+          "legal_significance": "initial_documentation_of_trust_structure_manipulation",
+          "evidence": [
+            "trust_documentation",
+            "beneficiary_records"
+          ],
+          "pattern": "foundation_phase"
+        },
+        {
+          "event_id": "EVENT_025",
+          "date": "2025-03-15",
+          "title": "R5.4M Stock Adjustment Processed Without Investigation",
+          "amount": 5400000.0,
+          "category": "accounting_fraud",
+          "perpetrators": [
+            "PERSON_002",
+            "PERSON_007"
+          ],
+          "victims": [
+            "ORG_004",
+            "TRUST_001"
+          ],
+          "entities_involved": [
+            "ORG_004"
+          ],
+          "description": "R5.4M written off as simple 'stock adjustment' without investigation, supporting documentation, or proper authorization. Bantjies as accountant should have investigated 46% loss but did not, demonstrating complicity.",
+          "legal_significance": "accounting_fraud_breach_of_professional_duty",
+          "evidence": [
+            "general_ledger_entries",
+            "lack_of_investigation_documentation"
+          ],
+          "pattern": "foundation_phase"
+        },
+        {
+          "event_id": "EVENT_004",
+          "date": "2025-04-01",
+          "title": "Payment Redirection Scheme",
+          "amount": 4276832.85,
+          "category": "financial_manipulation",
+          "perpetrators": [
+            "PERSON_001",
+            "PERSON_002"
+          ],
+          "victims": [
+            "PERSON_005",
+            "ORG_003"
+          ],
+          "entities_involved": [
+            "PLATFORM_001",
+            "bank_accounts"
+          ],
+          "description": "Part of R4.28M+ financial diversions. Payments redirected from platform owned/paid by RegimA Zone Ltd (UK)",
+          "legal_significance": "initial_implementation_of_systematic_financial_fraud",
+          "evidence": [
+            "bank_records",
+            "payment_gateway_logs"
+          ],
+          "pattern": "initial_theft_phase"
+        }
+      ]
+    },
+    "distribution": {
+      "distribution_analysis": {
+        "total_amount": 108515605.19,
+        "by_perpetrator": {
+          "ORG_008": 250.8,
+          "PERSON_001": 71060724.9,
+          "PERSON_002": 28144477.549999997,
+          "PERSON_007": 44446668.18,
+          "ORG_002": 40000.0,
+          "PERSON_011": 1035000.0,
+          "PERSON_003": 10600000.0
+        },
+        "transfer_count": 26
+      },
+      "perpetrators_identified": 7,
+      "largest_recipient": "PERSON_001"
+    },
+    "diagram": {
+      "title": "Revenue Stream Hijacking Fund Flow",
+      "total_transfers": 26,
+      "total_amount": 108515605.19,
+      "flow_description": "Source Funds \u2192 Intermediary Accounts \u2192 Perpetrator-Controlled Accounts",
+      "key_paths": [
+        "Trust Assets \u2192 Unauthorized Transfers \u2192 Perpetrator Benefit",
+        "Platform Revenue \u2192 Payment Redirection \u2192 Conspiracy Members",
+        "Investment Accounts \u2192 Account Hijacking \u2192 Financial Manipulation"
+      ]
+    }
+  }
+}

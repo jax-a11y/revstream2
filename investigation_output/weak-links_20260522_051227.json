@@ -1,0 +1,556 @@
+{
+  "case_id": "2025-137857",
+  "workflow": "weak-links",
+  "timestamp": "2026-05-22T05:12:27.320937",
+  "findings": {
+    "criticality": {
+      "total_entities": 26,
+      "critical_nodes": [
+        {
+          "entity_id": "PERSON_007",
+          "name": "Danie Bantjies",
+          "agent_type": "antagonist",
+          "degree_centrality": 5,
+          "financial_impact": 18685000.0,
+          "involvement_events": 3,
+          "roles": "accountant_and_unknown_trustee",
+          "conflict_of_interest": true,
+          "criticality_score": 81
+        },
+        {
+          "entity_id": "PERSON_001",
+          "name": "Peter Andrew Faucitt",
+          "agent_type": "antagonist",
+          "degree_centrality": 8,
+          "financial_impact": 10269727.9,
+          "involvement_events": 11,
+          "roles": "primary_perpetrator",
+          "conflict_of_interest": false,
+          "criticality_score": 70.5394558
+        },
+        {
+          "entity_id": "PERSON_002",
+          "name": "Rynette Farrar",
+          "agent_type": "antagonist",
+          "degree_centrality": 6,
+          "financial_impact": 4276832.85,
+          "involvement_events": 8,
+          "roles": "co_conspirator",
+          "conflict_of_interest": false,
+          "criticality_score": 54.553665699999996
+        },
+        {
+          "entity_id": "PERSON_005",
+          "name": "Daniel James Faucitt",
+          "agent_type": "victim",
+          "degree_centrality": 5,
+          "financial_impact": 10269727.9,
+          "involvement_events": 0,
+          "roles": "second_respondent",
+          "conflict_of_interest": false,
+          "criticality_score": 45.5394558
+        },
+        {
+          "entity_id": "ORG_008",
+          "name": "ReZonance (Pty) Ltd",
+          "agent_type": "victim",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 8,
+          "roles": "it_services_provider_and_creditor",
+          "conflict_of_interest": false,
+          "criticality_score": 26.0
+        },
+        {
+          "entity_id": "PLATFORM_001",
+          "name": "Shopify Platform",
+          "agent_type": "central_infrastructure",
+          "degree_centrality": 5,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "shopify_ecommerce_platform",
+          "conflict_of_interest": false,
+          "criticality_score": 25.0
+        },
+        {
+          "entity_id": "PERSON_003",
+          "name": "Adderory (Rynette's Son)",
+          "agent_type": "accomplice",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 5,
+          "roles": "co_conspirator_family_member",
+          "conflict_of_interest": false,
+          "criticality_score": 20.0
+        },
+        {
+          "entity_id": "ORG_003",
+          "name": "RegimA Zone Ltd",
+          "agent_type": "legitimate_business",
+          "degree_centrality": 4,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "infrastructure_owner",
+          "conflict_of_interest": false,
+          "criticality_score": 20.0
+        },
+        {
+          "entity_id": "TRUST_001",
+          "name": "Faucitt Family Trust",
+          "agent_type": "victim_entity",
+          "degree_centrality": 4,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "family_trust_structure_manipulated",
+          "conflict_of_interest": false,
+          "criticality_score": 20.0
+        },
+        {
+          "entity_id": "ORG_001",
+          "name": "Regima Worldwide Distribution (PTY) LTD",
+          "agent_type": "instrument_of_fraud",
+          "degree_centrality": 3,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "third_respondent",
+          "conflict_of_interest": false,
+          "criticality_score": 15.0
+        },
+        {
+          "entity_id": "PERSON_004",
+          "name": "Jacqueline Faucitt",
+          "agent_type": "victim",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "first_respondent",
+          "conflict_of_interest": false,
+          "criticality_score": 10.0
+        },
+        {
+          "entity_id": "PERSON_006",
+          "name": "Linda",
+          "agent_type": "neutral",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "bookkeeper",
+          "conflict_of_interest": false,
+          "criticality_score": 10.0
+        },
+        {
+          "entity_id": "ORG_005",
+          "name": "Villa Via",
+          "agent_type": "instrument_of_wealth_transfer",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "rental_property_company_wealth_extraction",
+          "conflict_of_interest": false,
+          "criticality_score": 10.0
+        },
+        {
+          "entity_id": "ORG_009",
+          "name": "Adderory (Pty) Ltd",
+          "agent_type": "accomplice",
+          "degree_centrality": 0,
+          "financial_impact": 0,
+          "involvement_events": 5,
+          "roles": "competing_business_fraud_vehicle",
+          "conflict_of_interest": false,
+          "criticality_score": 10.0
+        },
+        {
+          "entity_id": "DOMAIN_002",
+          "name": "UNKNOWN",
+          "agent_type": "instrument_of_fraud",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "fraudulent_domain_for_customer_hijacking",
+          "conflict_of_interest": false,
+          "criticality_score": 10.0
+        }
+      ],
+      "all_scores": [
+        {
+          "entity_id": "PERSON_007",
+          "name": "Danie Bantjies",
+          "agent_type": "antagonist",
+          "degree_centrality": 5,
+          "financial_impact": 18685000.0,
+          "involvement_events": 3,
+          "roles": "accountant_and_unknown_trustee",
+          "conflict_of_interest": true,
+          "criticality_score": 81
+        },
+        {
+          "entity_id": "PERSON_001",
+          "name": "Peter Andrew Faucitt",
+          "agent_type": "antagonist",
+          "degree_centrality": 8,
+          "financial_impact": 10269727.9,
+          "involvement_events": 11,
+          "roles": "primary_perpetrator",
+          "conflict_of_interest": false,
+          "criticality_score": 70.5394558
+        },
+        {
+          "entity_id": "PERSON_002",
+          "name": "Rynette Farrar",
+          "agent_type": "antagonist",
+          "degree_centrality": 6,
+          "financial_impact": 4276832.85,
+          "involvement_events": 8,
+          "roles": "co_conspirator",
+          "conflict_of_interest": false,
+          "criticality_score": 54.553665699999996
+        },
+        {
+          "entity_id": "PERSON_005",
+          "name": "Daniel James Faucitt",
+          "agent_type": "victim",
+          "degree_centrality": 5,
+          "financial_impact": 10269727.9,
+          "involvement_events": 0,
+          "roles": "second_respondent",
+          "conflict_of_interest": false,
+          "criticality_score": 45.5394558
+        },
+        {
+          "entity_id": "ORG_008",
+          "name": "ReZonance (Pty) Ltd",
+          "agent_type": "victim",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 8,
+          "roles": "it_services_provider_and_creditor",
+          "conflict_of_interest": false,
+          "criticality_score": 26.0
+        },
+        {
+          "entity_id": "PLATFORM_001",
+          "name": "Shopify Platform",
+          "agent_type": "central_infrastructure",
+          "degree_centrality": 5,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "shopify_ecommerce_platform",
+          "conflict_of_interest": false,
+          "criticality_score": 25.0
+        },
+        {
+          "entity_id": "PERSON_003",
+          "name": "Adderory (Rynette's Son)",
+          "agent_type": "accomplice",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 5,
+          "roles": "co_conspirator_family_member",
+          "conflict_of_interest": false,
+          "criticality_score": 20.0
+        },
+        {
+          "entity_id": "ORG_003",
+          "name": "RegimA Zone Ltd",
+          "agent_type": "legitimate_business",
+          "degree_centrality": 4,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "infrastructure_owner",
+          "conflict_of_interest": false,
+          "criticality_score": 20.0
+        },
+        {
+          "entity_id": "TRUST_001",
+          "name": "Faucitt Family Trust",
+          "agent_type": "victim_entity",
+          "degree_centrality": 4,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "family_trust_structure_manipulated",
+          "conflict_of_interest": false,
+          "criticality_score": 20.0
+        },
+        {
+          "entity_id": "ORG_001",
+          "name": "Regima Worldwide Distribution (PTY) LTD",
+          "agent_type": "instrument_of_fraud",
+          "degree_centrality": 3,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "third_respondent",
+          "conflict_of_interest": false,
+          "criticality_score": 15.0
+        },
+        {
+          "entity_id": "PERSON_004",
+          "name": "Jacqueline Faucitt",
+          "agent_type": "victim",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "first_respondent",
+          "conflict_of_interest": false,
+          "criticality_score": 10.0
+        },
+        {
+          "entity_id": "PERSON_006",
+          "name": "Linda",
+          "agent_type": "neutral",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "bookkeeper",
+          "conflict_of_interest": false,
+          "criticality_score": 10.0
+        },
+        {
+          "entity_id": "ORG_005",
+          "name": "Villa Via",
+          "agent_type": "instrument_of_wealth_transfer",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "rental_property_company_wealth_extraction",
+          "conflict_of_interest": false,
+          "criticality_score": 10.0
+        },
+        {
+          "entity_id": "ORG_009",
+          "name": "Adderory (Pty) Ltd",
+          "agent_type": "accomplice",
+          "degree_centrality": 0,
+          "financial_impact": 0,
+          "involvement_events": 5,
+          "roles": "competing_business_fraud_vehicle",
+          "conflict_of_interest": false,
+          "criticality_score": 10.0
+        },
+        {
+          "entity_id": "DOMAIN_002",
+          "name": "UNKNOWN",
+          "agent_type": "instrument_of_fraud",
+          "degree_centrality": 2,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "fraudulent_domain_for_customer_hijacking",
+          "conflict_of_interest": false,
+          "criticality_score": 10.0
+        },
+        {
+          "entity_id": "PERSON_008",
+          "name": "Kayla",
+          "agent_type": "victim",
+          "degree_centrality": 1,
+          "financial_impact": 0,
+          "involvement_events": 2,
+          "roles": "estate_creditor",
+          "conflict_of_interest": false,
+          "criticality_score": 9.0
+        },
+        {
+          "entity_id": "PERSON_009",
+          "name": "Gee",
+          "agent_type": "neutral",
+          "degree_centrality": 1,
+          "financial_impact": 0,
+          "involvement_events": 2,
+          "roles": "email_sender_witness",
+          "conflict_of_interest": false,
+          "criticality_score": 9.0
+        },
+        {
+          "entity_id": "PERSON_010",
+          "name": "Bernadine Wright",
+          "agent_type": "neutral",
+          "degree_centrality": 1,
+          "financial_impact": 0,
+          "involvement_events": 1,
+          "roles": "financial_professional",
+          "conflict_of_interest": false,
+          "criticality_score": 7.0
+        },
+        {
+          "entity_id": "ORG_010",
+          "name": "Adderory Skin (Pty) Ltd",
+          "agent_type": "accomplice",
+          "degree_centrality": 0,
+          "financial_impact": 0,
+          "involvement_events": 3,
+          "roles": "competing_business_fraud_vehicle",
+          "conflict_of_interest": false,
+          "criticality_score": 6.0
+        },
+        {
+          "entity_id": "ORG_002",
+          "name": "Regima Skin Treatments CC",
+          "agent_type": "affected_entity",
+          "degree_centrality": 1,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "fourth_respondent",
+          "conflict_of_interest": false,
+          "criticality_score": 5.0
+        },
+        {
+          "entity_id": "ORG_004",
+          "name": "Strategic Logistics Group",
+          "agent_type": "victim_entity",
+          "degree_centrality": 1,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "trust_owned_warehouse_and_logistics",
+          "conflict_of_interest": false,
+          "criticality_score": 5.0
+        },
+        {
+          "entity_id": "DOMAIN_001",
+          "name": "UNKNOWN",
+          "agent_type": "legitimate_asset",
+          "degree_centrality": 1,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "legitimate_domain",
+          "conflict_of_interest": false,
+          "criticality_score": 5.0
+        },
+        {
+          "entity_id": "PERSON_011",
+          "name": "Chantal",
+          "agent_type": "neutral",
+          "degree_centrality": 0,
+          "financial_impact": 0,
+          "involvement_events": 2,
+          "roles": "estate_related_party",
+          "conflict_of_interest": false,
+          "criticality_score": 4.0
+        },
+        {
+          "entity_id": "PERSON_012",
+          "name": "Jax",
+          "agent_type": "neutral",
+          "degree_centrality": 0,
+          "financial_impact": 0,
+          "involvement_events": 2,
+          "roles": "witness_and_victim",
+          "conflict_of_interest": false,
+          "criticality_score": 4.0
+        },
+        {
+          "entity_id": "ORG_006",
+          "name": "RegimA SA",
+          "agent_type": "victim_entity",
+          "degree_centrality": 0,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "revenue_stream_victim",
+          "conflict_of_interest": false,
+          "criticality_score": 0.0
+        },
+        {
+          "entity_id": "BANK_001",
+          "name": "UNKNOWN",
+          "agent_type": "instrument_of_fraud",
+          "degree_centrality": 0,
+          "financial_impact": 0,
+          "involvement_events": 0,
+          "roles": "allegedly_fraudulently_opened",
+          "conflict_of_interest": false,
+          "criticality_score": 0.0
+        }
+      ]
+    },
+    "conflicts": [
+      {
+        "entity_id": "PERSON_007",
+        "name": "Danie Bantjies",
+        "conflict": {
+          "triple_conflict": "trustee_debtor_accountant",
+          "roles": [
+            "trustee_of_TRUST_001",
+            "debtor_to_TRUST_001_R18685000",
+            "accountant_for_regima_group",
+            "commissioner_of_oaths"
+          ],
+          "motive": "prevent_discovery_of_R18685000_debt"
+        },
+        "motive": "prevent_discovery_of_R18685000_debt"
+      }
+    ],
+    "priorities": {
+      "priorities": [
+        {
+          "entity_id": "PERSON_007",
+          "name": "Danie Bantjies",
+          "priority_score": 100,
+          "reason": "High criticality: 5 connections, 3 events, R18,685,000 involved",
+          "is_conflicted": true
+        },
+        {
+          "entity_id": "PERSON_001",
+          "name": "Peter Andrew Faucitt",
+          "priority_score": 70.5394558,
+          "reason": "High criticality: 8 connections, 11 events, R10,269,728 involved",
+          "is_conflicted": false
+        },
+        {
+          "entity_id": "PERSON_002",
+          "name": "Rynette Farrar",
+          "priority_score": 54.553665699999996,
+          "reason": "High criticality: 6 connections, 8 events, R4,276,833 involved",
+          "is_conflicted": false
+        },
+        {
+          "entity_id": "PERSON_005",
+          "name": "Daniel James Faucitt",
+          "priority_score": 45.5394558,
+          "reason": "High criticality: 5 connections, 0 events, R10,269,728 involved",
+          "is_conflicted": false
+        },
+        {
+          "entity_id": "ORG_008",
+          "name": "ReZonance (Pty) Ltd",
+          "priority_score": 26.0,
+          "reason": "High criticality: 2 connections, 8 events, R0 involved",
+          "is_conflicted": false
+        },
+        {
+          "entity_id": "PLATFORM_001",
+          "name": "Shopify Platform",
+          "priority_score": 25.0,
+          "reason": "High criticality: 5 connections, 0 events, R0 involved",
+          "is_conflicted": false
+        },
+        {
+          "entity_id": "PERSON_003",
+          "name": "Adderory (Rynette's Son)",
+          "priority_score": 20.0,
+          "reason": "High criticality: 2 connections, 5 events, R0 involved",
+          "is_conflicted": false
+        },
+        {
+          "entity_id": "ORG_003",
+          "name": "RegimA Zone Ltd",
+          "priority_score": 20.0,
+          "reason": "High criticality: 4 connections, 0 events, R0 involved",
+          "is_conflicted": false
+        },
+        {
+          "entity_id": "TRUST_001",
+          "name": "Faucitt Family Trust",
+          "priority_score": 20.0,
+          "reason": "High criticality: 4 connections, 0 events, R0 involved",
+          "is_conflicted": false
+        },
+        {
+          "entity_id": "ORG_001",
+          "name": "Regima Worldwide Distribution (PTY) LTD",
+          "priority_score": 15.0,
+          "reason": "High criticality: 3 connections, 0 events, R0 involved",
+          "is_conflicted": false
+        }
+      ]
+    }
+  }
+}
